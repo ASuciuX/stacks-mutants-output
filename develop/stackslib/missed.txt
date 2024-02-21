@@ -1,0 +1,714 @@
+stackslib/src/clarity_cli_main.rs:32:5: replace main with ()
+stackslib/src/net/mod.rs:699:9: replace StacksNodeState<'a>::canonical_stacks_tip_height -> u32 with 1
+stackslib/src/net/mod.rs:705:9: replace StacksNodeState<'a>::set_relay_message with ()
+stackslib/src/net/mod.rs:709:9: replace StacksNodeState<'a>::take_relay_message -> Option<StacksMessageType> with None
+stackslib/src/net/mod.rs:1218:9: replace <impl Hash for NeighborKey>::hash with ()
+stackslib/src/net/mod.rs:911:9: replace NeighborAddress::clear_public_key -> () with ()
+stackslib/src/net/mod.rs:1259:9: replace <impl Debug for NeighborKey>::fmt -> fmt::Result with Ok(Default::default())
+stackslib/src/net/mod.rs:1317:9: replace Neighbor::is_allowed -> bool with true
+stackslib/src/net/mod.rs:1317:9: replace Neighbor::is_allowed -> bool with false
+stackslib/src/net/mod.rs:1327:9: replace Neighbor::is_denied -> bool with false
+stackslib/src/net/mod.rs:1417:9: replace NetworkResult::has_microblocks -> bool with true
+stackslib/src/net/mod.rs:1423:9: replace NetworkResult::has_transactions -> bool with true
+stackslib/src/net/mod.rs:1429:9: replace NetworkResult::has_attachments -> bool with false
+stackslib/src/net/mod.rs:1441:9: replace NetworkResult::transactions -> Vec<StacksTransaction> with vec![]
+stackslib/src/net/mod.rs:1450:9: replace NetworkResult::has_data_to_store -> bool with false
+stackslib/src/net/mod.rs:1528:9: replace NetworkResult::consume_stacker_db_sync_results with ()
+stackslib/src/burnchains/mod.rs:99:9: replace BurnchainParameters::from_params -> Option<BurnchainParameters> with None
+stackslib/src/burnchains/mod.rs:171:9: replace <impl Display for BurnchainSigner>::fmt -> fmt::Result with Ok(Default::default())
+stackslib/src/burnchains/mod.rs:153:9: replace BurnchainParameters::is_testnet -> bool with true
+stackslib/src/burnchains/mod.rs:213:9: replace BurnchainTransaction::num_signers -> usize with 1
+stackslib/src/burnchains/mod.rs:463:9: replace PoxConstants::is_after_pox_sunset_start -> bool with false
+stackslib/src/core/mod.rs:64:66: replace | with &
+stackslib/src/core/mod.rs:65:66: replace | with &
+stackslib/src/core/mod.rs:65:66: replace | with ^
+stackslib/src/core/mod.rs:150:50: replace + with *
+stackslib/src/core/mod.rs:170:52: replace + with *
+stackslib/src/core/mod.rs:175:52: replace + with -
+stackslib/src/core/mod.rs:175:52: replace + with *
+stackslib/src/core/mod.rs:177:52: replace + with *
+stackslib/src/core/mod.rs:232:5: replace check_fault_injection -> bool with true
+stackslib/src/monitoring/mod.rs:70:5: replace increment_stx_blocks_received_counter with ()
+stackslib/src/monitoring/mod.rs:75:5: replace increment_stx_micro_blocks_received_counter with ()
+stackslib/src/monitoring/mod.rs:80:5: replace increment_stx_blocks_served_counter with ()
+stackslib/src/monitoring/mod.rs:90:5: replace increment_stx_confirmed_micro_blocks_served_counter with ()
+stackslib/src/monitoring/mod.rs:95:5: replace increment_txs_received_counter with ()
+stackslib/src/monitoring/mod.rs:129:5: replace set_last_block_transaction_count with ()
+stackslib/src/monitoring/mod.rs:140:5: replace set_last_mined_execution_cost_observed with ()
+stackslib/src/monitoring/mod.rs:165:5: replace increment_btc_ops_sent_counter with ()
+stackslib/src/monitoring/mod.rs:170:5: replace increment_stx_blocks_processed_counter with ()
+stackslib/src/monitoring/mod.rs:175:5: replace increment_stx_blocks_mined_counter with ()
+stackslib/src/monitoring/mod.rs:185:5: replace increment_errors_emitted_counter with ()
+stackslib/src/monitoring/mod.rs:218:5: replace txid_tracking_db_contains -> Result<bool, DatabaseError> with Ok(true)
+stackslib/src/monitoring/mod.rs:218:5: replace txid_tracking_db_contains -> Result<bool, DatabaseError> with Ok(false)
+stackslib/src/monitoring/mod.rs:231:5: replace mempool_accepted -> Result<(), DatabaseError> with Ok(())
+stackslib/src/monitoring/mod.rs:251:5: replace log_transaction_processed -> Result<(), DatabaseError> with Ok(())
+stackslib/src/monitoring/mod.rs:289:5: replace update_stacks_tip_height with ()
+stackslib/src/monitoring/mod.rs:283:5: replace update_active_miners_count_gauge with ()
+stackslib/src/monitoring/mod.rs:301:5: replace update_inbound_neighbors with ()
+stackslib/src/monitoring/mod.rs:313:5: replace update_inbound_bandwidth with ()
+stackslib/src/monitoring/mod.rs:325:5: replace update_inbound_rpc_bandwidth with ()
+stackslib/src/monitoring/mod.rs:331:5: replace update_outbound_rpc_bandwidth with ()
+stackslib/src/monitoring/mod.rs:337:5: replace increment_msg_counter with ()
+stackslib/src/monitoring/mod.rs:344:5: replace increment_stx_mempool_gc with ()
+stackslib/src/monitoring/mod.rs:349:5: replace increment_contract_calls_processed with ()
+stackslib/src/monitoring/mod.rs:412:5: replace update_computed_relative_miner_score with ()
+stackslib/src/monitoring/mod.rs:421:5: replace update_computed_miner_commitment with ()
+stackslib/src/monitoring/mod.rs:445:5: replace set_burnchain_signer -> Result<(), SetGlobalBurnchainSignerError> with Ok(())
+stackslib/src/monitoring/mod.rs:459:5: replace get_burnchain_signer -> Option<BurnchainSigner> with None
+stackslib/src/cost_estimates/mod.rs:77:9: replace FeeRateEstimate::to_vec -> Vec<f64> with vec![]
+stackslib/src/cost_estimates/mod.rs:77:9: replace FeeRateEstimate::to_vec -> Vec<f64> with vec![-1.0]
+stackslib/src/cost_estimates/mod.rs:114:5: replace estimate_fee_rate -> Result<f64, EstimatorError> with Ok(0.0)
+stackslib/src/cost_estimates/mod.rs:201:9: replace <impl Display for EstimatorError>::fmt -> std::fmt::Result with Ok(Default::default())
+stackslib/src/clarity_cli.rs:111:5: replace print_usage with ()
+stackslib/src/clarity_cli.rs:161:5: replace parse -> Result<Vec<SymbolicExpression>, Error> with Ok(vec![])
+stackslib/src/clarity_cli.rs:314:5: replace get_cli_block_height -> Option<u64> with Some(1)
+stackslib/src/clarity_cli.rs:405:5: replace default_chain_id -> u32 with 1
+stackslib/src/clarity_cli.rs:484:5: replace save_coverage with ()
+stackslib/src/clarity_cli.rs:583:9: replace CLIHeadersDB::get_cli_db_path -> String with String::new()
+stackslib/src/clarity_cli.rs:647:9: replace <impl HeadersDB for CLIHeadersDB>::get_burn_header_hash_for_block -> Option<BurnchainHeaderHash> with None
+stackslib/src/clarity_cli.rs:696:9: replace <impl HeadersDB for CLIHeadersDB>::get_burn_block_time_for_block -> Option<u64> with Some(0)
+stackslib/src/clarity_cli.rs:696:9: replace <impl HeadersDB for CLIHeadersDB>::get_burn_block_time_for_block -> Option<u64> with Some(1)
+stackslib/src/clarity_cli.rs:724:9: replace <impl HeadersDB for CLIHeadersDB>::get_burnchain_tokens_spent_for_winning_block -> Option<u128> with None
+stackslib/src/clarity_cli.rs:724:9: replace <impl HeadersDB for CLIHeadersDB>::get_burnchain_tokens_spent_for_winning_block -> Option<u128> with Some(0)
+stackslib/src/clarity_cli.rs:724:9: replace <impl HeadersDB for CLIHeadersDB>::get_burnchain_tokens_spent_for_winning_block -> Option<u128> with Some(1)
+stackslib/src/clarity_cli.rs:729:9: replace <impl HeadersDB for CLIHeadersDB>::get_tokens_earned_for_block -> Option<u128> with None
+stackslib/src/clarity_cli.rs:729:9: replace <impl HeadersDB for CLIHeadersDB>::get_tokens_earned_for_block -> Option<u128> with Some(0)
+stackslib/src/clarity_cli.rs:729:9: replace <impl HeadersDB for CLIHeadersDB>::get_tokens_earned_for_block -> Option<u128> with Some(1)
+stackslib/src/clarity_cli.rs:941:5: replace add_serialized_output with ()
+stackslib/src/util_lib/db.rs:45:46: replace * with +
+stackslib/src/util_lib/db.rs:45:39: replace * with +
+stackslib/src/util_lib/db.rs:117:9: replace <impl Error for Error>::cause -> Option<&dyn error::Error> with None
+stackslib/src/util_lib/db.rs:91:9: replace <impl Display for Error>::fmt -> fmt::Result with Ok(Default::default())
+stackslib/src/util_lib/db.rs:225:9: replace <impl FromColumn for i64>::from_column -> Result<i64, Error> with Ok(0)
+stackslib/src/util_lib/db.rs:225:9: replace <impl FromColumn for i64>::from_column -> Result<i64, Error> with Ok(-1)
+stackslib/src/util_lib/db.rs:242:9: replace <impl FromRow for bool>::from_row -> Result<bool, Error> with Ok(true)
+stackslib/src/util_lib/db.rs:528:5: replace sql_pragma -> Result<(), Error> with Ok(())
+stackslib/src/util_lib/db.rs:541:5: replace sql_vacuum -> Result<(), Error> with Ok(())
+stackslib/src/util_lib/db.rs:745:5: replace get_ancestor_block_height -> Result<Option<u64>, Error> with Ok(Some(1))
+stackslib/src/util_lib/db.rs:745:5: replace get_ancestor_block_height -> Result<Option<u64>, Error> with Ok(Some(0))
+stackslib/src/util_lib/db.rs:872:9: replace IndexDBTx<'a, C, T>::get_ancestor_block_height -> Result<Option<u64>, Error> with Ok(Some(0))
+stackslib/src/util_lib/db.rs:945:9: replace <impl Drop for IndexDBTx<'a, C, T>>::drop with ()
+stackslib/src/util_lib/bloom.rs:61:9: replace BitField::clear with ()
+stackslib/src/util_lib/bloom.rs:166:9: replace <impl Display for BloomNodeHasher>::fmt -> Result<(), std::fmt::Error> with Ok(())
+stackslib/src/util_lib/bloom.rs:408:9: replace BloomCounter<H>::get_seed -> &[u8; 32] with &[1; 32]
+stackslib/src/util_lib/bloom.rs:589:9: replace <impl BloomHash for BloomNodeHasher>::get_seed -> &[u8; 32] with &[0; 32]
+stackslib/src/util_lib/strings.rs:77:9: replace <impl Display for StacksString>::fmt -> fmt::Result with Ok(Default::default())
+stackslib/src/util_lib/strings.rs:96:9: replace <impl DerefMut for StacksString>::deref_mut -> &mut Vec<u8> with Box::leak(Box::new(vec![]))
+stackslib/src/util_lib/strings.rs:96:9: replace <impl DerefMut for StacksString>::deref_mut -> &mut Vec<u8> with Box::leak(Box::new(vec![1]))
+stackslib/src/util_lib/strings.rs:218:9: replace StacksString::is_clarity_variable -> bool with true
+stackslib/src/util_lib/strings.rs:287:9: replace UrlString::has_routable_host -> bool with true
+stackslib/src/util_lib/strings.rs:310:9: replace UrlString::get_port -> Option<u16> with None
+stackslib/src/net/asn.rs:42:9: replace ASEntry4::from_file -> Result<Vec<ASEntry4>, net_error> with Ok(vec![])
+stackslib/src/util_lib/strings.rs:310:9: replace UrlString::get_port -> Option<u16> with Some(1)
+stackslib/src/net/atlas/mod.rs:119:9: replace AtlasConfig::validate -> Result<(), String> with Ok(())
+stackslib/src/net/chat.rs:71:43: replace * with +
+stackslib/src/net/chat.rs:78:53: replace * with +
+stackslib/src/net/chat.rs:303:9: replace NeighborStats::get_message_recv_count -> u64 with 0
+stackslib/src/net/chat.rs:303:9: replace NeighborStats::get_message_recv_count -> u64 with 1
+stackslib/src/net/chat.rs:508:9: replace Neighbor::from_conversation -> Result<Option<Neighbor>, net_error> with Ok(None)
+stackslib/src/net/chat.rs:582:9: replace ConversationP2P::set_public_key -> () with ()
+stackslib/src/net/chat.rs:632:9: replace ConversationP2P::is_outbound -> bool with true
+stackslib/src/net/chat.rs:640:9: replace ConversationP2P::get_public_key -> Option<StacksPublicKey> with Some(Default::default())
+stackslib/src/net/chat.rs:644:9: replace ConversationP2P::get_public_key_hash -> Option<Hash160> with None
+stackslib/src/net/chat.rs:653:9: replace ConversationP2P::get_burnchain_tip_height -> u64 with 1
+stackslib/src/net/chat.rs:657:9: replace ConversationP2P::get_stable_burnchain_tip_height -> u64 with 1
+stackslib/src/net/chat.rs:657:9: replace ConversationP2P::get_stable_burnchain_tip_height -> u64 with 0
+stackslib/src/net/chat.rs:860:9: replace ConversationP2P::next_seq -> u32 with 0
+stackslib/src/net/chat.rs:860:9: replace ConversationP2P::next_seq -> u32 with 1
+stackslib/src/net/chat.rs:1160:9: replace ConversationP2P::clear_stacker_db_handshake_data with ()
+stackslib/src/net/chat.rs:2274:9: replace ConversationP2P::num_pending_outbound -> usize with 0
+stackslib/src/net/chat.rs:2285:9: replace ConversationP2P::validate_inbound_message -> Result<bool, net_error> with Ok(true)
+stackslib/src/net/codec.rs:437:9: replace BlocksData::push -> () with ()
+stackslib/src/net/codec.rs:443:9: replace <impl StacksMessageCodec for BlocksData>::consensus_serialize -> Result<(), codec_error> with Ok(())
+stackslib/src/net/codec.rs:473:9: replace <impl StacksMessageCodec for MicroblocksData>::consensus_serialize -> Result<(), codec_error> with Ok(())
+stackslib/src/net/codec.rs:898:9: replace StacksMessageType::get_message_name -> &'static str with ""
+stackslib/src/net/codec.rs:1033:9: replace <impl StacksMessageCodec for StacksMessageID>::consensus_serialize -> Result<(), codec_error> with Ok(())
+stackslib/src/net/codec.rs:930:9: replace StacksMessageType::get_message_description -> String with "xyzzy".into()
+stackslib/src/net/codec.rs:1404:9: replace <impl MessageSequence for StacksMessage>::get_message_name -> &'static str with ""
+stackslib/src/net/codec.rs:1404:9: replace <impl MessageSequence for StacksMessage>::get_message_name -> &'static str with "xyzzy"
+stackslib/src/net/connection.rs:134:9: replace NetworkReplyHandle<P>::expects_reply -> bool with true
+stackslib/src/net/connection.rs:134:9: replace NetworkReplyHandle<P>::expects_reply -> bool with false
+stackslib/src/net/connection.rs:1363:9: replace NetworkConnection<P>::outbox_len -> usize with 0
+stackslib/src/net/connection.rs:1363:9: replace NetworkConnection<P>::outbox_len -> usize with 1
+stackslib/src/net/connection.rs:1386:9: replace NetworkConnection<P>::ref_public_key -> Option<&Secp256k1PublicKey> with None
+stackslib/src/net/db.rs:106:9: replace <impl Display for LocalPeer>::fmt -> fmt::Result with Ok(Default::default())
+stackslib/src/net/db.rs:485:9: replace PeerDB::add_indexes -> Result<(), db_error> with Ok(())
+stackslib/src/net/db.rs:120:9: replace <impl Debug for LocalPeer>::fmt -> fmt::Result with Ok(Default::default())
+stackslib/src/net/db.rs:964:9: replace PeerDB::is_peer_denied -> Result<bool, db_error> with Ok(false)
+stackslib/src/net/db.rs:990:9: replace PeerDB::is_peer_always_allowed -> Result<bool, db_error> with Ok(true)
+stackslib/src/net/db.rs:1037:9: replace PeerDB::drop_stacker_dbs -> Result<(), db_error> with Ok(())
+stackslib/src/net/db.rs:1117:9: replace PeerDB::is_initial_peer -> Result<bool, db_error> with Ok(true)
+stackslib/src/net/db.rs:1145:9: replace PeerDB::clear_initial_peers -> Result<(), db_error> with Ok(())
+stackslib/src/net/db.rs:1240:9: replace PeerDB::update_peer -> Result<(), db_error> with Ok(())
+stackslib/src/net/db.rs:1469:9: replace PeerDB::remove_cidr_prefix -> Result<(), db_error> with Ok(())
+stackslib/src/net/dns.rs:273:9: replace DNSClient::clear_timeouts -> () with ()
+stackslib/src/net/dns.rs:354:9: replace DNSClient::clear_all_requests -> () with ()
+stackslib/src/net/download.rs:170:9: replace <impl Display for BlockRequestKey>::fmt -> fmt::Result with Ok(Default::default())
+stackslib/src/net/download.rs:319:9: replace BlockDownloader::restart_scan -> () with ()
+stackslib/src/net/download.rs:333:9: replace BlockDownloader::dns_lookups_begin -> Result<(), net_error> with Ok(())
+stackslib/src/net/download.rs:434:9: replace BlockDownloader::getblocks_try_finish -> Result<bool, net_error> with Ok(true)
+stackslib/src/net/download.rs:434:9: replace BlockDownloader::getblocks_try_finish -> Result<bool, net_error> with Ok(false)
+stackslib/src/net/download.rs:553:9: replace BlockDownloader::getmicroblocks_begin -> () with ()
+stackslib/src/net/download.rs:563:9: replace BlockDownloader::getmicroblocks_try_finish -> Result<bool, net_error> with Ok(true)
+stackslib/src/net/download.rs:563:9: replace BlockDownloader::getmicroblocks_try_finish -> Result<bool, net_error> with Ok(false)
+stackslib/src/net/download.rs:845:9: replace BlockDownloader::get_microblock_stream_availability -> Result<Vec<NeighborKey>, net_error> with Ok(vec![])
+stackslib/src/net/download.rs:888:9: replace BlockDownloader::clear_broken_peers -> (Vec<usize>, Vec<NeighborKey>) with (vec![], vec![])
+stackslib/src/net/download.rs:888:9: replace BlockDownloader::clear_broken_peers -> (Vec<usize>, Vec<NeighborKey>) with (vec![1], vec![])
+stackslib/src/net/download.rs:942:9: replace BlockDownloader::hint_microblock_sortition_height_available -> () with ()
+stackslib/src/net/download.rs:975:9: replace BlockDownloader::is_initial_download -> bool with true
+stackslib/src/net/download.rs:975:9: replace BlockDownloader::is_initial_download -> bool with false
+stackslib/src/net/download.rs:980:9: replace BlockDownloader::num_requests_inflight -> usize with 1
+stackslib/src/net/download.rs:985:9: replace BlockDownloader::is_download_idle -> bool with false
+stackslib/src/net/download.rs:990:9: replace BlockDownloader::is_inflight -> bool with false
+stackslib/src/net/download.rs:1045:9: replace PeerNetwork::hint_download_rescan -> () with ()
+stackslib/src/net/download.rs:1053:9: replace PeerNetwork::get_data_url -> Option<UrlString> with None
+stackslib/src/net/download.rs:1102:9: replace PeerNetwork::can_download_microblock_stream -> Result<bool, net_error> with Ok(false)
+stackslib/src/net/download.rs:1195:9: replace PeerNetwork::make_requests -> Result<HashMap<u64, VecDeque<BlockRequestKey>>, net_error> with Ok(HashMap::from_iter([(0, VecDeque::new())]))
+stackslib/src/net/download.rs:1539:9: replace PeerNetwork::make_block_requests -> Result<HashMap<u64, VecDeque<BlockRequestKey>>, net_error> with Ok(HashMap::new())
+stackslib/src/net/download.rs:1539:9: replace PeerNetwork::make_block_requests -> Result<HashMap<u64, VecDeque<BlockRequestKey>>, net_error> with Ok(HashMap::from_iter([(0, VecDeque::new())]))
+stackslib/src/net/download.rs:1556:9: replace PeerNetwork::make_confirmed_microblock_requests -> Result<HashMap<u64, VecDeque<BlockRequestKey>>, net_error> with Ok(HashMap::from_iter([(0, VecDeque::new())]))
+stackslib/src/net/download.rs:1556:9: replace PeerNetwork::make_confirmed_microblock_requests -> Result<HashMap<u64, VecDeque<BlockRequestKey>>, net_error> with Ok(HashMap::from_iter([(1, VecDeque::new())]))
+stackslib/src/net/download.rs:1903:9: replace PeerNetwork::block_dns_lookups_try_finish -> Result<bool, net_error> with Ok(true)
+stackslib/src/net/download.rs:1903:9: replace PeerNetwork::block_dns_lookups_try_finish -> Result<bool, net_error> with Ok(false)
+stackslib/src/net/download.rs:2007:9: replace PeerNetwork::block_getblocks_try_finish -> Result<bool, net_error> with Ok(true)
+stackslib/src/net/download.rs:2045:9: replace PeerNetwork::block_getmicroblocks_try_finish -> Result<bool, net_error> with Ok(true)
+stackslib/src/net/download.rs:2045:9: replace PeerNetwork::block_getmicroblocks_try_finish -> Result<bool, net_error> with Ok(false)
+stackslib/src/net/download.rs:2068:9: replace PeerNetwork::finish_downloads -> Result<(bool, bool, Option<PoxId>, Vec<(ConsensusHash, StacksBlock, u64)>, Vec<(ConsensusHash, Vec<StacksMicroblock>, u64)>,), net_error, > with Ok((true, true, None, vec![], vec![]))
+stackslib/src/net/download.rs:2068:9: replace PeerNetwork::finish_downloads -> Result<(bool, bool, Option<PoxId>, Vec<(ConsensusHash, StacksBlock, u64)>, Vec<(ConsensusHash, Vec<StacksMicroblock>, u64)>,), net_error, > with Ok((true, false, None, vec![], vec![]))
+stackslib/src/net/download.rs:2068:9: replace PeerNetwork::finish_downloads -> Result<(bool, bool, Option<PoxId>, Vec<(ConsensusHash, StacksBlock, u64)>, Vec<(ConsensusHash, Vec<StacksMicroblock>, u64)>,), net_error, > with Ok((false, false, None, vec![], vec![]))
+stackslib/src/net/download.rs:2356:9: replace PeerNetwork::download_blocks -> Result<(bool, bool, Option<PoxId>, Vec<(ConsensusHash, StacksBlock, u64)>, Vec<(ConsensusHash, Vec<StacksMicroblock>, u64)>, Vec<usize>, Vec<NeighborKey>,), net_error, > with Ok((true, true, None, vec![], vec![], vec![1], vec![]))
+stackslib/src/net/download.rs:2356:9: replace PeerNetwork::download_blocks -> Result<(bool, bool, Option<PoxId>, Vec<(ConsensusHash, StacksBlock, u64)>, Vec<(ConsensusHash, Vec<StacksMicroblock>, u64)>, Vec<usize>, Vec<NeighborKey>,), net_error, > with Ok((true, false, None, vec![], vec![], vec![1], vec![]))
+stackslib/src/net/download.rs:2356:9: replace PeerNetwork::download_blocks -> Result<(bool, bool, Option<PoxId>, Vec<(ConsensusHash, StacksBlock, u64)>, Vec<(ConsensusHash, Vec<StacksMicroblock>, u64)>, Vec<usize>, Vec<NeighborKey>,), net_error, > with Ok((false, true, None, vec![], vec![], vec![1], vec![]))
+stackslib/src/net/download.rs:2356:9: replace PeerNetwork::download_blocks -> Result<(bool, bool, Option<PoxId>, Vec<(ConsensusHash, StacksBlock, u64)>, Vec<(ConsensusHash, Vec<StacksMicroblock>, u64)>, Vec<usize>, Vec<NeighborKey>,), net_error, > with Ok((false, false, None, vec![], vec![], vec![1], vec![]))
+stackslib/src/net/httpcore.rs:160:9: replace <impl HttpPreambleExtensions for HttpResponsePreamble>::set_request_id with ()
+stackslib/src/net/httpcore.rs:165:9: replace <impl HttpPreambleExtensions for HttpResponsePreamble>::get_canonical_stacks_tip_height -> Option<u32> with Some(1)
+stackslib/src/net/httpcore.rs:171:9: replace <impl HttpPreambleExtensions for HttpResponsePreamble>::get_request_id -> Option<u32> with Some(0)
+stackslib/src/net/httpcore.rs:171:9: replace <impl HttpPreambleExtensions for HttpResponsePreamble>::get_request_id -> Option<u32> with Some(1)
+stackslib/src/net/httpcore.rs:508:9: replace StacksHttpRequest::verb -> &str with ""
+stackslib/src/net/httpcore.rs:513:9: replace StacksHttpRequest::duration_ms -> u128 with 1
+stackslib/src/net/httpcore.rs:513:9: replace StacksHttpRequest::duration_ms -> u128 with 0
+stackslib/src/net/httpcore.rs:711:9: replace <impl StacksMessageCodec for StacksHttpPreamble>::consensus_serialize -> Result<(), CodecError> with Ok(())
+stackslib/src/net/httpcore.rs:752:9: replace <impl MessageSequence for StacksHttpMessage>::request_id -> u32 with 0
+stackslib/src/net/httpcore.rs:756:9: replace <impl MessageSequence for StacksHttpMessage>::get_message_name -> &'static str with "xyzzy"
+stackslib/src/net/inv.rs:400:9: replace PeerBlocksInv::set_pox_bit -> bool with false
+stackslib/src/net/inv.rs:406:9: replace PeerBlocksInv::num_blocks -> u64 with 1
+stackslib/src/net/inv.rs:417:9: replace PeerBlocksInv::num_microblock_streams -> u64 with 1
+stackslib/src/net/inv.rs:441:9: replace PeerBlocksInv::pox_inv_cmp -> Option<(u64, bool, bool)> with Some((0, true, true))
+stackslib/src/net/inv.rs:428:9: replace PeerBlocksInv::num_pox_anchor_blocks -> u64 with 1
+stackslib/src/net/inv.rs:441:9: replace PeerBlocksInv::pox_inv_cmp -> Option<(u64, bool, bool)> with Some((0, true, false))
+stackslib/src/net/inv.rs:441:9: replace PeerBlocksInv::pox_inv_cmp -> Option<(u64, bool, bool)> with Some((0, false, true))
+stackslib/src/net/inv.rs:441:9: replace PeerBlocksInv::pox_inv_cmp -> Option<(u64, bool, bool)> with Some((1, true, true))
+stackslib/src/net/inv.rs:441:9: replace PeerBlocksInv::pox_inv_cmp -> Option<(u64, bool, bool)> with Some((1, false, true))
+stackslib/src/net/inv.rs:441:9: replace PeerBlocksInv::pox_inv_cmp -> Option<(u64, bool, bool)> with Some((1, false, false))
+stackslib/src/net/inv.rs:471:9: replace PeerBlocksInv::get_block_height -> u64 with 1
+stackslib/src/net/inv.rs:476:9: replace PeerBlocksInv::get_pox_height -> u64 with 1
+stackslib/src/net/inv.rs:567:9: replace NeighborBlockStats::is_peer_online -> bool with true
+stackslib/src/net/inv.rs:746:9: replace NeighborBlockStats::check_local_pox_inv_uncertainty -> u64 with 1
+stackslib/src/net/inv.rs:1056:9: replace InvState::get_inv_sortitions -> u64 with 1
+stackslib/src/net/inv.rs:1069:9: replace InvState::get_inv_num_blocks -> u64 with 1
+stackslib/src/net/inv.rs:1105:9: replace InvState::get_broken_peers -> Vec<NeighborKey> with vec![]
+stackslib/src/net/inv.rs:1127:9: replace InvState::get_dead_peers -> Vec<NeighborKey> with vec![]
+stackslib/src/net/inv.rs:1137:9: replace InvState::get_stats -> Option<&NeighborBlockStats> with None
+stackslib/src/net/inv.rs:1141:9: replace InvState::get_stats_mut -> Option<&mut NeighborBlockStats> with None
+stackslib/src/net/inv.rs:1158:9: replace InvState::has_inv_data_for_downloader -> bool with true
+stackslib/src/net/inv.rs:1158:9: replace InvState::has_inv_data_for_downloader -> bool with false
+stackslib/src/net/inv.rs:1676:9: replace PeerNetwork::is_peer_target -> bool with true
+stackslib/src/net/inv.rs:1711:9: replace PeerNetwork::make_next_getpoxinv -> Result<Option<(u64, GetPoxInv)>, net_error> with Ok(None)
+stackslib/src/net/inv.rs:1676:9: replace PeerNetwork::is_peer_target -> bool with false
+stackslib/src/net/inv.rs:1759:9: replace PeerNetwork::get_block_scan_start -> u64 with 0
+stackslib/src/net/neighbors/mod.rs:57:48: replace * with /
+stackslib/src/net/neighbors/mod.rs:57:38: replace * with +
+stackslib/src/net/neighbors/mod.rs:57:38: replace * with /
+stackslib/src/net/p2p.rs:103:9: replace NetworkHandle::send_request -> Result<(), net_error> with Ok(())
+stackslib/src/net/p2p.rs:128:9: replace NetworkHandle::advertize_blocks -> Result<(), net_error> with Ok(())
+stackslib/src/net/p2p.rs:118:9: replace NetworkHandle::ban_peers -> Result<(), net_error> with Ok(())
+stackslib/src/net/p2p.rs:160:9: replace NetworkHandle::broadcast_message -> Result<(), net_error> with Ok(())
+stackslib/src/net/p2p.rs:587:9: replace PeerNetwork::get_p2p_convo_mut -> Option<&mut ConversationP2P> with None
+stackslib/src/net/p2p.rs:646:9: replace PeerNetwork::iter_peer_event_ids -> impl Iterator<Item =&usize> with ::std::iter::empty()
+stackslib/src/net/p2p.rs:661:9: replace PeerNetwork::get_header_cache_mut -> &mut BlockHeaderCache with Box::leak(Box::new(Default::default()))
+stackslib/src/net/p2p.rs:680:9: replace PeerNetwork::count_outbound_stackerdb_replicas -> usize with 0
+stackslib/src/net/p2p.rs:680:9: replace PeerNetwork::count_outbound_stackerdb_replicas -> usize with 1
+stackslib/src/net/p2p.rs:823:9: replace PeerNetwork::add_relay_handle with ()
+stackslib/src/net/p2p.rs:956:9: replace PeerNetwork::count_outbound_conversations -> u64 with 0
+stackslib/src/net/p2p.rs:876:9: replace PeerNetwork::broadcast_message -> () with ()
+stackslib/src/net/p2p.rs:1115:9: replace PeerNetwork::sample_broadcast_peers -> Result<Vec<NeighborKey>, net_error> with Ok(vec![])
+stackslib/src/net/p2p.rs:1198:9: replace PeerNetwork::dispatch_request -> Result<(), net_error> with Ok(())
+stackslib/src/net/p2p.rs:1271:9: replace PeerNetwork::dispatch_requests with ()
+stackslib/src/net/p2p.rs:1450:9: replace PeerNetwork::get_event_neighbor_key -> Option<NeighborKey> with None
+stackslib/src/net/p2p.rs:1648:9: replace PeerNetwork::is_registered -> bool with false
+stackslib/src/net/p2p.rs:1669:9: replace PeerNetwork::get_neighbor_convo_mut -> Option<&mut ConversationP2P> with None
+stackslib/src/net/p2p.rs:1677:9: replace PeerNetwork::deregister_socket -> () with ()
+stackslib/src/net/p2p.rs:1734:9: replace PeerNetwork::deregister_neighbor -> () with ()
+stackslib/src/net/p2p.rs:2061:9: replace PeerNetwork::process_neighbor_walk -> () with ()
+stackslib/src/net/p2p.rs:2237:9: replace PeerNetwork::rekey with ()
+stackslib/src/net/p2p.rs:2288:9: replace PeerNetwork::flush_relay_handles -> Vec<usize> with vec![1]
+stackslib/src/net/p2p.rs:2288:9: replace PeerNetwork::flush_relay_handles -> Vec<usize> with vec![0]
+stackslib/src/net/p2p.rs:2671:9: replace PeerNetwork::do_get_public_ip -> bool with true
+stackslib/src/net/p2p.rs:2746:9: replace PeerNetwork::do_network_block_download -> bool with true
+stackslib/src/net/p2p.rs:2860:9: replace PeerNetwork::find_next_push_block -> Option<(ConsensusHash, StacksBlock)> with None
+stackslib/src/net/p2p.rs:3391:9: replace PeerNetwork::mempool_sync_reset with ()
+stackslib/src/net/p2p.rs:3024:9: replace PeerNetwork::try_push_local_data with ()
+stackslib/src/net/p2p.rs:4154:9: replace PeerNetwork::find_reciprocal_event -> Option<usize> with Some(1)
+stackslib/src/net/p2p.rs:4183:9: replace PeerNetwork::find_outbound_neighbor -> Option<NeighborKey> with None
+stackslib/src/net/p2p.rs:4264:9: replace PeerNetwork::handle_unsolicited_inv_update -> Result<Option<u64>, net_error> with Ok(None)
+stackslib/src/net/p2p.rs:4264:9: replace PeerNetwork::handle_unsolicited_inv_update -> Result<Option<u64>, net_error> with Ok(Some(1))
+stackslib/src/net/p2p.rs:4427:9: replace PeerNetwork::need_block_or_microblock_stream -> Result<bool, net_error> with Ok(true)
+stackslib/src/net/p2p.rs:4427:9: replace PeerNetwork::need_block_or_microblock_stream -> Result<bool, net_error> with Ok(false)
+stackslib/src/net/p2p.rs:4559:9: replace PeerNetwork::handle_unsolicited_MicroblocksAvailable -> bool with false
+stackslib/src/net/p2p.rs:4778:9: replace PeerNetwork::handle_unsolicited_MicroblocksData -> bool with true
+stackslib/src/net/p2p.rs:4856:9: replace PeerNetwork::handle_unsolicited_message -> (bool, bool) with (true, true)
+stackslib/src/net/p2p.rs:4856:9: replace PeerNetwork::handle_unsolicited_message -> (bool, bool) with (false, true)
+stackslib/src/net/p2p.rs:4856:9: replace PeerNetwork::handle_unsolicited_message -> (bool, bool) with (false, false)
+stackslib/src/net/p2p.rs:4930:9: replace PeerNetwork::handle_unsolicited_messages -> HashMap<NeighborKey, Vec<StacksMessage>> with HashMap::new()
+stackslib/src/net/p2p.rs:4992:9: replace PeerNetwork::find_unauthenticated_inbound_convos -> Vec<usize> with vec![0]
+stackslib/src/net/p2p.rs:5098:9: replace PeerNetwork::count_public_inbound -> usize with 0
+stackslib/src/net/p2p.rs:5115:9: replace PeerNetwork::has_more_downloads -> bool with false
+stackslib/src/net/p2p.rs:5137:9: replace PeerNetwork::refresh_local_peer -> Result<(), net_error> with Ok(())
+stackslib/src/net/p2p.rs:5146:9: replace PeerNetwork::set_stacker_db_configs with ()
+stackslib/src/net/p2p.rs:5153:9: replace PeerNetwork::get_stacker_db_configs_owned -> HashMap<QualifiedContractIdentifier, StackerDBConfig> with HashMap::new()
+stackslib/src/net/prune.rs:47:9: replace PeerNetwork::org_neighbor_distribution -> Result<HashMap<u32, Vec<(NeighborKey, NeighborStats)>>, net_error> with Ok(HashMap::new())
+stackslib/src/net/prune.rs:47:9: replace PeerNetwork::org_neighbor_distribution -> Result<HashMap<u32, Vec<(NeighborKey, NeighborStats)>>, net_error> with Ok(HashMap::from_iter([(0, vec![])]))
+stackslib/src/net/prune.rs:47:9: replace PeerNetwork::org_neighbor_distribution -> Result<HashMap<u32, Vec<(NeighborKey, NeighborStats)>>, net_error> with Ok(HashMap::from_iter([(1, vec![])]))
+stackslib/src/net/prune.rs:150:9: replace PeerNetwork::sample_org_by_neighbor_count -> u32 with 0
+stackslib/src/net/prune.rs:150:9: replace PeerNetwork::sample_org_by_neighbor_count -> u32 with 1
+stackslib/src/net/prune.rs:178:9: replace PeerNetwork::prune_frontier_outbound_orgs -> Result<Vec<NeighborKey>, net_error> with Ok(vec![])
+stackslib/src/net/prune.rs:312:9: replace PeerNetwork::prune_frontier_inbound_ip -> Vec<NeighborKey> with vec![]
+stackslib/src/net/relay.rs:147:9: replace <impl RelayPayload for BlocksAvailableData>::get_id -> String with String::new()
+stackslib/src/net/relay.rs:167:9: replace <impl RelayPayload for StacksMicroblock>::get_id -> String with String::new()
+stackslib/src/net/relay.rs:177:9: replace <impl RelayPayload for StacksTransaction>::get_id -> String with String::new()
+stackslib/src/net/relay.rs:426:9: replace RelayerStats::sample_neighbors -> Vec<NeighborKey> with vec![]
+stackslib/src/net/relay.rs:493:9: replace Relayer::validate_blocks_push -> Result<(), net_error> with Ok(())
+stackslib/src/net/relay.rs:735:9: replace Relayer::preprocess_downloaded_blocks -> HashMap<ConsensusHash, StacksBlock> with HashMap::new()
+stackslib/src/net/relay.rs:803:9: replace Relayer::fault_injection_is_block_hidden -> bool with true
+stackslib/src/net/relay.rs:841:9: replace Relayer::preprocess_pushed_blocks -> Result<(HashMap<ConsensusHash, StacksBlock>, Vec<NeighborKey>), net_error> with Ok((HashMap::new(), vec![]))
+stackslib/src/net/relay.rs:803:9: replace Relayer::fault_injection_is_block_hidden -> bool with false
+stackslib/src/net/relay.rs:1048:9: replace Relayer::preprocess_pushed_microblocks -> Result<(Vec<(Vec<RelayData>, MicroblocksData)>, Vec<NeighborKey>), net_error> with Ok((vec![], vec![]))
+stackslib/src/net/relay.rs:1315:9: replace Relayer::static_check_problematic_relayed_microblock -> bool with true
+stackslib/src/net/relay.rs:1333:9: replace Relayer::do_static_problematic_checks -> bool with true
+stackslib/src/net/relay.rs:1339:9: replace Relayer::do_static_problematic_checks -> bool with false
+stackslib/src/net/relay.rs:1348:9: replace Relayer::process_mined_problematic_blocks -> bool with false
+stackslib/src/net/relay.rs:1383:9: replace Relayer::process_new_blocks -> Result<(HashMap<ConsensusHash, StacksBlock>, HashMap<ConsensusHash, (StacksBlockId, Vec<StacksMicroblock>)>, Vec<(Vec<RelayData>, MicroblocksData)>, Vec<NeighborKey>,), net_error, > with Ok((HashMap::new(), HashMap::new(), vec![], vec![]))
+stackslib/src/net/relay.rs:1481:9: replace Relayer::load_blocks_available_data -> Result<BlocksAvailableMap, net_error> with Ok(Default::default())
+stackslib/src/net/relay.rs:1630:9: replace Relayer::advertize_blocks -> Result<(), net_error> with Ok(())
+stackslib/src/net/relay.rs:1638:9: replace Relayer::broadcast_block -> Result<(), net_error> with Ok(())
+stackslib/src/net/relay.rs:1690:9: replace Relayer::setup_unconfirmed_state_readonly -> Result<(), Error> with Ok(())
+stackslib/src/net/relay.rs:1733:9: replace Relayer::process_uploaded_stackerdb_chunks with ()
+stackslib/src/net/relay.rs:2097:9: replace PeerNetwork::advertize_to_peer -> () with ()
+stackslib/src/net/relay.rs:2175:9: replace PeerNetwork::push_microblocks_to_peer -> () with ()
+stackslib/src/net/relay.rs:2324:9: replace PeerNetwork::advertize_blocks -> Result<(usize, usize), net_error> with Ok((1, 0))
+stackslib/src/net/relay.rs:2324:9: replace PeerNetwork::advertize_blocks -> Result<(usize, usize), net_error> with Ok((1, 1))
+stackslib/src/net/relay.rs:2375:9: replace PeerNetwork::advertize_microblocks -> Result<(usize, usize), net_error> with Ok((0, 0))
+stackslib/src/net/relay.rs:2375:9: replace PeerNetwork::advertize_microblocks -> Result<(usize, usize), net_error> with Ok((0, 1))
+stackslib/src/net/relay.rs:2375:9: replace PeerNetwork::advertize_microblocks -> Result<(usize, usize), net_error> with Ok((1, 0))
+stackslib/src/net/relay.rs:2375:9: replace PeerNetwork::advertize_microblocks -> Result<(usize, usize), net_error> with Ok((1, 1))
+stackslib/src/net/relay.rs:2413:9: replace PeerNetwork::update_relayer_stats -> () with ()
+stackslib/src/net/rpc.rs:188:9: replace ConversationHttp::get_url -> Option<&UrlString> with None
+stackslib/src/net/rpc.rs:139:9: replace <impl Debug for ConversationHttp>::fmt -> fmt::Result with Ok(Default::default())
+stackslib/src/net/rpc.rs:198:9: replace ConversationHttp::is_request_inflight -> bool with false
+stackslib/src/net/rpc.rs:495:9: replace ConversationHttp::is_drained -> bool with true
+stackslib/src/net/rpc.rs:502:9: replace ConversationHttp::is_keep_alive -> bool with true
+stackslib/src/net/rpc.rs:512:9: replace ConversationHttp::get_last_response_time -> u64 with 0
+stackslib/src/net/rpc.rs:507:9: replace ConversationHttp::get_last_request_time -> u64 with 0
+stackslib/src/net/server.rs:160:9: replace HttpPeer::count_inbound_ip_addrs -> u64 with 0
+stackslib/src/net/stackerdb/mod.rs:449:9: replace PeerNetwork::handle_unsolicited_StackerDBPushChunk -> Result<bool, net_error> with Ok(false)
+stackslib/src/chainstate/coordinator/mod.rs:891:9: replace ChainsCoordinator<'a, T, N, U, CE, FE, B>::get_snapshots_and_affirmation_maps_at_height -> Result<Vec<(BlockSnapshot, AffirmationMap)>, Error> with Ok(vec![])
+stackslib/src/chainstate/coordinator/mod.rs:1283:9: replace ChainsCoordinator<'a, T, N, U, CE, FE, B>::find_invalid_and_revalidated_sortitions -> Result<Option<(u64, u64, Vec<BlockSnapshot>)>, Error> with Ok(None)
+stackslib/src/chainstate/coordinator/mod.rs:1220:9: replace ChainsCoordinator<'a, T, N, U, CE, FE, B>::find_valid_sortitions -> Result<(u64, Vec<BlockSnapshot>), Error> with Ok((1, vec![]))
+stackslib/src/chainstate/coordinator/mod.rs:1283:9: replace ChainsCoordinator<'a, T, N, U, CE, FE, B>::find_invalid_and_revalidated_sortitions -> Result<Option<(u64, u64, Vec<BlockSnapshot>)>, Error> with Ok(Some((1, 0, vec![])))
+stackslib/src/chainstate/coordinator/mod.rs:1283:9: replace ChainsCoordinator<'a, T, N, U, CE, FE, B>::find_invalid_and_revalidated_sortitions -> Result<Option<(u64, u64, Vec<BlockSnapshot>)>, Error> with Ok(Some((0, 1, vec![])))
+stackslib/src/chainstate/coordinator/mod.rs:1283:9: replace ChainsCoordinator<'a, T, N, U, CE, FE, B>::find_invalid_and_revalidated_sortitions -> Result<Option<(u64, u64, Vec<BlockSnapshot>)>, Error> with Ok(Some((1, 1, vec![])))
+stackslib/src/chainstate/coordinator/mod.rs:1399:9: replace ChainsCoordinator<'a, T, N, U, CE, FE, B>::undo_stacks_block_orphaning -> Result<(), Error> with Ok(())
+stackslib/src/chainstate/coordinator/mod.rs:1470:9: replace ChainsCoordinator<'a, T, N, U, CE, FE, B>::handle_affirmation_reorg -> Result<(), Error> with Ok(())
+stackslib/src/chainstate/coordinator/mod.rs:2036:9: replace ChainsCoordinator<'a, T, N, U, CE, FE, B>::try_revalidate_sortition -> Result<Option<BlockSnapshot>, Error> with Ok(None)
+stackslib/src/chainstate/coordinator/mod.rs:2097:9: replace ChainsCoordinator<'a, T, N, U, CE, FE, B>::check_missing_anchor_block -> Result<Option<BlockHeaderHash>, Error> with Ok(None)
+stackslib/src/chainstate/stacks/mod.rs:418:9: replace TransactionAuthField::is_public_key -> bool with true
+stackslib/src/chainstate/stacks/mod.rs:449:9: replace TransactionAuthField::get_public_key -> Result<StacksPublicKey, net_error> with Ok(Default::default())
+stackslib/src/chainstate/stacks/mod.rs:490:9: replace SinglesigHashMode::from_address_hash_mode -> Option<SinglesigHashMode> with None
+stackslib/src/chainstate/stacks/mod.rs:515:9: replace MultisigHashMode::from_address_hash_mode -> Option<MultisigHashMode> with None
+stackslib/src/chainstate/stacks/mod.rs:618:9: replace TransactionPayload::name -> &'static str with "xyzzy"
+stackslib/src/chainstate/stacks/mod.rs:659:9: replace AssetInfoID::from_u8 -> Option<AssetInfoID> with None
+stackslib/src/burnchains/affirmation.rs:304:9: replace <impl Debug for AffirmationMapEntry>::fmt -> fmt::Result with Ok(Default::default())
+stackslib/src/burnchains/affirmation.rs:506:5: replace get_parent_child_reward_cycles -> Option<(u64, u64)> with Some((0, 0))
+stackslib/src/burnchains/affirmation.rs:1070:5: replace find_pox_anchor_block_ptr -> Result<Option<PoxAnchorPtr>, Error> with Ok(None)
+stackslib/src/burnchains/bitcoin/mod.rs:94:9: replace <impl Display for Error>::fmt -> fmt::Result with Ok(Default::default())
+stackslib/src/burnchains/burnchain.rs:363:9: replace BurnchainBlock::timestamp -> u64 with 1
+stackslib/src/burnchains/burnchain.rs:427:9: replace Burnchain::is_mainnet -> bool with true
+stackslib/src/burnchains/burnchain.rs:438:9: replace Burnchain::expected_sunset_burn -> u64 with 0
+stackslib/src/burnchains/burnchain.rs:427:9: replace Burnchain::is_mainnet -> bool with false
+stackslib/src/burnchains/burnchain.rs:1080:9: replace Burnchain::sync -> Result<u64, burnchain_error> with Ok(1)
+stackslib/src/burnchains/db.rs:147:5: replace apply_blockstack_txs_safety_checks -> () with ()
+stackslib/src/burnchains/db.rs:412:9: replace BurnchainDBTransaction<'a>::clear_anchor_block -> Result<(), DBError> with Ok(())
+stackslib/src/burnchains/db.rs:956:9: replace BurnchainDB::add_indexes -> Result<(), BurnchainError> with Ok(())
+stackslib/src/burnchains/db.rs:1105:9: replace BurnchainDB::has_burnchain_block_at_height -> Result<bool, BurnchainError> with Ok(false)
+stackslib/src/burnchains/db.rs:1283:9: replace BurnchainDB::is_anchor_block -> Result<bool, DBError> with Ok(true)
+stackslib/src/burnchains/db.rs:1614:9: replace BurnchainDB::get_override_affirmation_map -> Result<Option<AffirmationMap>, DBError> with Ok(None)
+stackslib/src/clarity_vm/clarity.rs:245:9: replace ClarityInstance::is_mainnet -> bool with false
+stackslib/src/clarity_vm/clarity.rs:523:9: replace ClarityInstance::drop_unconfirmed_state with ()
+stackslib/src/clarity_vm/clarity.rs:600:9: replace ClarityInstance::trie_exists_for_block -> Result<bool, DatabaseError> with Ok(true)
+stackslib/src/clarity_vm/clarity.rs:1067:9: replace ClarityBlockConnection<'a, 'b>::initialize_epoch_2_2 -> Result<Vec<StacksTransactionReceipt>, Error> with Ok(vec![])
+stackslib/src/clarity_vm/clarity.rs:1094:9: replace ClarityBlockConnection<'a, 'b>::initialize_epoch_2_3 -> Result<Vec<StacksTransactionReceipt>, Error> with Ok(vec![])
+stackslib/src/clarity_vm/clarity.rs:1368:9: replace <impl Drop for ClarityTransactionConnection<'a, 'b>>::drop with ()
+stackslib/src/clarity_vm/database/mod.rs:43:9: replace <impl HeadersDB for HeadersDBConn<'a>>::get_stacks_block_header_hash_for_block -> Option<BlockHeaderHash> with None
+stackslib/src/clarity_vm/database/mod.rs:64:9: replace <impl HeadersDB for HeadersDBConn<'a>>::get_burn_block_time_for_block -> Option<u64> with Some(0)
+stackslib/src/clarity_vm/database/mod.rs:64:9: replace <impl HeadersDB for HeadersDBConn<'a>>::get_burn_block_time_for_block -> Option<u64> with Some(1)
+stackslib/src/clarity_vm/database/mod.rs:79:9: replace <impl HeadersDB for HeadersDBConn<'a>>::get_vrf_seed_for_block -> Option<VRFSeed> with None
+stackslib/src/clarity_vm/database/mod.rs:86:9: replace <impl HeadersDB for HeadersDBConn<'a>>::get_miner_address -> Option<StacksAddress> with None
+stackslib/src/clarity_vm/database/mod.rs:94:9: replace <impl HeadersDB for HeadersDBConn<'a>>::get_burnchain_tokens_spent_for_block -> Option<u128> with Some(0)
+stackslib/src/clarity_vm/database/mod.rs:94:9: replace <impl HeadersDB for HeadersDBConn<'a>>::get_burnchain_tokens_spent_for_block -> Option<u128> with Some(1)
+stackslib/src/clarity_vm/database/mod.rs:101:9: replace <impl HeadersDB for HeadersDBConn<'a>>::get_burnchain_tokens_spent_for_winning_block -> Option<u128> with None
+stackslib/src/clarity_vm/database/mod.rs:101:9: replace <impl HeadersDB for HeadersDBConn<'a>>::get_burnchain_tokens_spent_for_winning_block -> Option<u128> with Some(0)
+stackslib/src/clarity_vm/database/mod.rs:108:9: replace <impl HeadersDB for HeadersDBConn<'a>>::get_tokens_earned_for_block -> Option<u128> with None
+stackslib/src/clarity_vm/database/mod.rs:117:9: replace <impl HeadersDB for ChainstateTx<'a>>::get_stacks_block_header_hash_for_block -> Option<BlockHeaderHash> with None
+stackslib/src/clarity_vm/database/mod.rs:126:9: replace <impl HeadersDB for ChainstateTx<'a>>::get_burn_header_hash_for_block -> Option<BurnchainHeaderHash> with None
+stackslib/src/clarity_vm/database/mod.rs:138:9: replace <impl HeadersDB for ChainstateTx<'a>>::get_burn_block_time_for_block -> Option<u64> with None
+stackslib/src/clarity_vm/database/mod.rs:138:9: replace <impl HeadersDB for ChainstateTx<'a>>::get_burn_block_time_for_block -> Option<u64> with Some(0)
+stackslib/src/clarity_vm/database/mod.rs:138:9: replace <impl HeadersDB for ChainstateTx<'a>>::get_burn_block_time_for_block -> Option<u64> with Some(1)
+stackslib/src/clarity_vm/database/mod.rs:153:9: replace <impl HeadersDB for ChainstateTx<'a>>::get_vrf_seed_for_block -> Option<VRFSeed> with None
+stackslib/src/clarity_vm/database/mod.rs:160:9: replace <impl HeadersDB for ChainstateTx<'a>>::get_miner_address -> Option<StacksAddress> with None
+stackslib/src/clarity_vm/database/mod.rs:168:9: replace <impl HeadersDB for ChainstateTx<'a>>::get_burnchain_tokens_spent_for_block -> Option<u128> with Some(1)
+stackslib/src/clarity_vm/database/mod.rs:178:9: replace <impl HeadersDB for ChainstateTx<'a>>::get_burnchain_tokens_spent_for_winning_block -> Option<u128> with None
+stackslib/src/clarity_vm/database/mod.rs:178:9: replace <impl HeadersDB for ChainstateTx<'a>>::get_burnchain_tokens_spent_for_winning_block -> Option<u128> with Some(0)
+stackslib/src/clarity_vm/database/mod.rs:178:9: replace <impl HeadersDB for ChainstateTx<'a>>::get_burnchain_tokens_spent_for_winning_block -> Option<u128> with Some(1)
+stackslib/src/clarity_vm/database/mod.rs:185:9: replace <impl HeadersDB for ChainstateTx<'a>>::get_tokens_earned_for_block -> Option<u128> with Some(0)
+stackslib/src/clarity_vm/database/mod.rs:185:9: replace <impl HeadersDB for ChainstateTx<'a>>::get_tokens_earned_for_block -> Option<u128> with None
+stackslib/src/clarity_vm/database/mod.rs:203:9: replace <impl HeadersDB for MARF<StacksBlockId>>::get_burn_header_hash_for_block -> Option<BurnchainHeaderHash> with None
+stackslib/src/clarity_vm/database/mod.rs:215:9: replace <impl HeadersDB for MARF<StacksBlockId>>::get_burn_block_time_for_block -> Option<u64> with None
+stackslib/src/clarity_vm/database/mod.rs:215:9: replace <impl HeadersDB for MARF<StacksBlockId>>::get_burn_block_time_for_block -> Option<u64> with Some(1)
+stackslib/src/clarity_vm/database/mod.rs:230:9: replace <impl HeadersDB for MARF<StacksBlockId>>::get_vrf_seed_for_block -> Option<VRFSeed> with None
+stackslib/src/clarity_vm/database/mod.rs:405:9: replace <impl BurnStateDB for SortitionHandleTx<'_>>::get_burn_block_height -> Option<u32> with None
+stackslib/src/clarity_vm/database/mod.rs:417:9: replace <impl BurnStateDB for SortitionHandleTx<'_>>::get_burn_header_hash -> Option<BurnchainHeaderHash> with None
+stackslib/src/clarity_vm/database/mod.rs:454:9: replace <impl BurnStateDB for SortitionHandleTx<'_>>::get_v2_unlock_height -> u32 with 0
+stackslib/src/clarity_vm/database/mod.rs:673:9: replace <impl ClarityBackingStore for MemoryBackingStore>::get_with_proof -> Option<(String, Vec<u8>)> with Some((String::new(), vec![]))
+stackslib/src/clarity_vm/database/mod.rs:673:9: replace <impl ClarityBackingStore for MemoryBackingStore>::get_with_proof -> Option<(String, Vec<u8>)> with Some((String::new(), vec![1]))
+stackslib/src/clarity_vm/database/mod.rs:673:9: replace <impl ClarityBackingStore for MemoryBackingStore>::get_with_proof -> Option<(String, Vec<u8>)> with Some(("xyzzy".into(), vec![]))
+stackslib/src/clarity_vm/database/mod.rs:673:9: replace <impl ClarityBackingStore for MemoryBackingStore>::get_with_proof -> Option<(String, Vec<u8>)> with Some(("xyzzy".into(), vec![0]))
+stackslib/src/clarity_vm/database/mod.rs:673:9: replace <impl ClarityBackingStore for MemoryBackingStore>::get_with_proof -> Option<(String, Vec<u8>)> with Some(("xyzzy".into(), vec![1]))
+stackslib/src/clarity_vm/database/mod.rs:697:9: replace <impl ClarityBackingStore for MemoryBackingStore>::get_current_block_height -> u32 with 1
+stackslib/src/clarity_vm/database/mod.rs:701:9: replace <impl ClarityBackingStore for MemoryBackingStore>::get_cc_special_cases_handler -> Option<SpecialCaseHandler> with None
+stackslib/src/core/mempool.rs:89:52: replace * with /
+stackslib/src/core/mempool.rs:114:9: replace <impl Display for TxTag>::fmt -> Result<(), std::fmt::Error> with Ok(())
+stackslib/src/core/mempool.rs:357:9: replace <impl Display for MemPoolDropReason>::fmt -> std::fmt::Result with Ok(Default::default())
+stackslib/src/core/mempool.rs:424:9: replace MemPoolTxMetadata::get_unknown_nonces -> Vec<StacksAddress> with vec![]
+stackslib/src/core/mempool.rs:474:9: replace MemPoolWalkTxTypes::only -> HashSet<MemPoolWalkTxTypes> with HashSet::new()
+stackslib/src/core/mempool.rs:1186:9: replace CandidateCache::len -> usize with 0
+stackslib/src/core/mempool.rs:1495:9: replace MemPoolDB::estimate_tx_rates -> Result<u32, db_error> with Ok(1)
+stackslib/src/core/mempool.rs:1965:9: replace MemPoolDB::get_previous_block_height -> Result<Option<u64>, db_error> with Ok(Some(0))
+stackslib/src/core/mempool.rs:1965:9: replace MemPoolDB::get_previous_block_height -> Result<Option<u64>, db_error> with Ok(Some(1))
+stackslib/src/core/mempool.rs:2027:9: replace MemPoolDB::are_blocks_in_same_fork -> Result<bool, db_error> with Ok(true)
+stackslib/src/core/mempool.rs:2215:9: replace MemPoolDB::poll -> Vec<StacksTransaction> with vec![]
+stackslib/src/cost_estimates/fee_medians.rs:89:9: replace WeightedMedianFeeRateEstimator<M>::db_already_instantiated -> Result<bool, SqliteError> with Ok(false)
+stackslib/src/cost_estimates/fee_scalar.rs:72:9: replace ScalarFeeRateEstimator<M>::db_already_instantiated -> Result<bool, SqliteError> with Ok(false)
+stackslib/src/cost_estimates/metrics.rs:27:9: replace <impl CostMetric for Box<dyn CostMetric>>::from_cost_and_len -> u64 with 0
+stackslib/src/cost_estimates/metrics.rs:31:9: replace <impl CostMetric for Box<dyn CostMetric>>::from_len -> u64 with 0
+stackslib/src/cost_estimates/metrics.rs:35:9: replace <impl CostMetric for Box<dyn CostMetric>>::change_per_byte -> f64 with 0.0
+stackslib/src/cost_estimates/metrics.rs:35:9: replace <impl CostMetric for Box<dyn CostMetric>>::change_per_byte -> f64 with -1.0
+stackslib/src/cost_estimates/metrics.rs:83:9: replace <impl CostMetric for ProportionalDotProduct>::from_len -> u64 with 0
+stackslib/src/cost_estimates/metrics.rs:83:9: replace <impl CostMetric for ProportionalDotProduct>::from_len -> u64 with 1
+stackslib/src/cost_estimates/metrics.rs:87:9: replace <impl CostMetric for ProportionalDotProduct>::change_per_byte -> f64 with 1.0
+stackslib/src/cost_estimates/metrics.rs:102:9: replace <impl CostMetric for UnitMetric>::from_len -> u64 with 0
+stackslib/src/cost_estimates/metrics.rs:87:9: replace <impl CostMetric for ProportionalDotProduct>::change_per_byte -> f64 with -1.0
+stackslib/src/cost_estimates/metrics.rs:106:9: replace <impl CostMetric for UnitMetric>::change_per_byte -> f64 with 1.0
+stackslib/src/cost_estimates/pessimistic.rs:205:9: replace PessimisticEstimator::db_already_instantiated -> Result<bool, SqliteError> with Ok(false)
+stackslib/src/net/api/getblock.rs:206:9: replace <impl HttpChunkGenerator for StacksBlockStream>::hint_chunk_size -> usize with 0
+stackslib/src/net/api/getheaders.rs:231:9: replace <impl HttpChunkGenerator for StacksHeaderStream>::hint_chunk_size -> usize with 1
+stackslib/src/net/api/getmicroblocks_indexed.rs:214:9: replace <impl HttpChunkGenerator for StacksIndexedMicroblockStream>::hint_chunk_size -> usize with 1
+stackslib/src/net/api/getmicroblocks_unconfirmed.rs:221:9: replace <impl HttpChunkGenerator for StacksUnconfirmedMicroblockStream>::hint_chunk_size -> usize with 1
+stackslib/src/net/api/postfeerate.rs:64:9: replace RPCFeeEstimate::estimate_fees -> Vec<RPCFeeEstimate> with vec![]
+stackslib/src/net/api/poststackerdbchunk.rs:123:9: replace StackerDBErrorCodes::code -> u32 with 0
+stackslib/src/net/api/poststackerdbchunk.rs:123:9: replace StackerDBErrorCodes::code -> u32 with 1
+stackslib/src/net/api/poststackerdbchunk.rs:130:9: replace StackerDBErrorCodes::reason -> &'static str with "xyzzy"
+stackslib/src/net/api/poststackerdbchunk.rs:137:9: replace StackerDBErrorCodes::into_json -> serde_json::Value with Default::default()
+stackslib/src/net/atlas/db.rs:200:9: replace AtlasDB::add_indexes -> Result<(), db_error> with Ok(())
+stackslib/src/net/atlas/db.rs:329:9: replace AtlasDB::check_schema_version_or_error -> Result<(), db_error> with Ok(())
+stackslib/src/net/atlas/db.rs:631:9: replace AtlasDB::find_unresolved_attachment_instances -> Result<Vec<AttachmentInstance>, db_error> with Ok(vec![])
+stackslib/src/net/atlas/download.rs:68:9: replace AttachmentsDownloader::has_ready_batches -> bool with true
+stackslib/src/net/atlas/download.rs:81:9: replace AttachmentsDownloader::pop_next_ready_batch -> Option<AttachmentsBatch> with None
+stackslib/src/net/atlas/download.rs:101:9: replace AttachmentsDownloader::run -> Result<(Vec<(AttachmentInstance, Attachment)>, Vec<usize>), net_error> with Ok((vec![], vec![0]))
+stackslib/src/net/atlas/download.rs:101:9: replace AttachmentsDownloader::run -> Result<(Vec<(AttachmentInstance, Attachment)>, Vec<usize>), net_error> with Ok((vec![], vec![1]))
+stackslib/src/net/atlas/download.rs:322:9: replace AttachmentsDownloader::enqueue_initial_attachments -> Result<Vec<(AttachmentInstance, Attachment)>, DBError> with Ok(vec![])
+stackslib/src/net/atlas/download.rs:376:9: replace AttachmentsBatchStateContext::get_peers_urls -> Vec<UrlString> with vec![]
+stackslib/src/net/atlas/download.rs:995:9: replace BatchedRequestsResult<T>::empty -> BatchedRequestsResult<T> with BatchedRequestsResult::new(Default::default())
+stackslib/src/net/atlas/download.rs:1017:9: replace <impl Hash for AttachmentsInventoryRequest>::hash with ()
+stackslib/src/net/atlas/download.rs:1078:9: replace <impl Display for AttachmentsInventoryRequest>::fmt -> fmt::Result with Ok(Default::default())
+stackslib/src/net/atlas/download.rs:1102:9: replace <impl Hash for AttachmentRequest>::hash with ()
+stackslib/src/net/atlas/download.rs:1297:9: replace ReliabilityReport::bump_failed_requests with ()
+stackslib/src/net/http/request.rs:626:9: replace HttpRequestContents::take_parsed_data -> Option<serde_json::Value> with None
+stackslib/src/net/http/response.rs:76:9: replace <impl Debug for HttpResponseContents>::fmt -> fmt::Result with Ok(Default::default())
+stackslib/src/net/http/response.rs:302:9: replace HttpResponsePreamble::remove_header -> bool with true
+stackslib/src/net/http/response.rs:302:9: replace HttpResponsePreamble::remove_header -> bool with false
+stackslib/src/net/http/response.rs:328:9: replace HttpResponsePreamble::add_CORS_headers -> () with ()
+stackslib/src/net/http/response.rs:340:5: replace rfc7231_now -> String with String::new()
+stackslib/src/net/http/response.rs:340:5: replace rfc7231_now -> String with "xyzzy".into()
+stackslib/src/net/http/response.rs:630:9: replace HttpResponsePayload::try_content_length -> Option<u32> with None
+stackslib/src/net/http/response.rs:630:9: replace HttpResponsePayload::try_content_length -> Option<u32> with Some(1)
+stackslib/src/net/http/response.rs:630:9: replace HttpResponsePayload::try_content_length -> Option<u32> with Some(0)
+stackslib/src/net/http/response.rs:711:9: replace <impl TryInto for HttpResponsePayload>::try_into -> Result<String, Error> with Ok("xyzzy".into())
+stackslib/src/net/neighbors/comms.rs:454:9: replace <impl NeighborComms for PeerNetworkComms>::get_connecting -> Option<usize> with None
+stackslib/src/net/neighbors/comms.rs:460:9: replace <impl NeighborComms for PeerNetworkComms>::remove_connecting with ()
+stackslib/src/net/neighbors/comms.rs:471:9: replace <impl NeighborComms for PeerNetworkComms>::add_broken with ()
+stackslib/src/net/neighbors/comms.rs:467:9: replace <impl NeighborComms for PeerNetworkComms>::add_dead with ()
+stackslib/src/net/neighbors/comms.rs:475:9: replace <impl NeighborComms for PeerNetworkComms>::pin_connection with ()
+stackslib/src/net/neighbors/comms.rs:479:9: replace <impl NeighborComms for PeerNetworkComms>::unpin_connection with ()
+stackslib/src/net/neighbors/comms.rs:487:9: replace <impl NeighborComms for PeerNetworkComms>::clear_pinned_connections -> HashSet<usize> with HashSet::new()
+stackslib/src/net/neighbors/comms.rs:492:9: replace <impl NeighborComms for PeerNetworkComms>::is_pinned -> bool with true
+stackslib/src/net/neighbors/comms.rs:664:9: replace NeighborCommsRequest::is_message_stale -> bool with false
+stackslib/src/net/neighbors/db.rs:412:9: replace <impl NeighborWalkDB for PeerDBNeighborWalk>::check_neighbor_denied -> Result<(), net_error> with Ok(())
+stackslib/src/net/neighbors/db.rs:278:9: replace <impl NeighborWalkDB for PeerDBNeighborWalk>::lookup_stale_neighbors -> Result<(HashMap<NeighborAddress, Neighbor>, Vec<NeighborAddress>), net_error> with Ok((HashMap::new(), vec![]))
+stackslib/src/net/neighbors/db.rs:390:9: replace <impl NeighborWalkDB for PeerDBNeighborWalk>::get_initial_walk_neighbors -> Result<Vec<Neighbor>, net_error> with Ok(vec![])
+stackslib/src/net/neighbors/neighbor.rs:134:9: replace Neighbor::degree -> u64 with 0
+stackslib/src/net/neighbors/neighbor.rs:134:9: replace Neighbor::degree -> u64 with 1
+stackslib/src/net/neighbors/walk.rs:82:9: replace NeighborWalkResult::add_new -> () with ()
+stackslib/src/net/neighbors/walk.rs:86:9: replace NeighborWalkResult::add_broken -> () with ()
+stackslib/src/net/neighbors/walk.rs:98:9: replace NeighborWalkResult::clear -> () with ()
+stackslib/src/net/neighbors/walk.rs:517:9: replace NeighborWalk<DB, NC>::clear_connections -> () with ()
+stackslib/src/net/neighbors/walk.rs:570:9: replace NeighborWalk<DB, NC>::filter_sensible_neighbors -> Vec<NeighborAddress> with vec![]
+stackslib/src/net/neighbors/walk.rs:1397:9: replace NeighborWalk<DB, NC>::degree_ratio -> f64 with 0.0
+stackslib/src/net/neighbors/walk.rs:1397:9: replace NeighborWalk<DB, NC>::degree_ratio -> f64 with 1.0
+stackslib/src/net/neighbors/walk.rs:1397:9: replace NeighborWalk<DB, NC>::degree_ratio -> f64 with -1.0
+stackslib/src/net/neighbors/walk.rs:1599:9: replace NeighborWalk<DB, NC>::check_handshake_pubkey_hash -> bool with false
+stackslib/src/net/neighbors/walk.rs:1725:9: replace NeighborWalk<DB, NC>::handle_handshake_accept_from_ping -> Result<(), net_error> with Ok(())
+stackslib/src/net/stackerdb/db.rs:218:9: replace StackerDBTx<'a>::get_stackerdb_contract_ids -> Result<Vec<QualifiedContractIdentifier>, net_error> with Ok(vec![])
+stackslib/src/net/stackerdb/sync.rs:90:9: replace StackerDBSync<NC>::find_new_replicas -> Result<HashSet<NeighborAddress>, net_error> with Ok(HashSet::new())
+stackslib/src/net/stackerdb/sync.rs:404:9: replace StackerDBSync<NC>::add_downloaded_chunk with ()
+stackslib/src/net/stackerdb/sync.rs:437:9: replace StackerDBSync<NC>::add_pushed_chunk -> bool with true
+stackslib/src/net/stackerdb/sync.rs:617:9: replace StackerDBSync<NC>::connect_try_finish -> Result<bool, net_error> with Ok(true)
+stackslib/src/net/stackerdb/sync.rs:1046:9: replace StackerDBSync<NC>::recalculate_chunk_request_schedule -> Result<(), net_error> with Ok(())
+stackslib/src/chainstate/burn/distribution.rs:103:9: replace BurnSamplePoint::sanity_check_window with ()
+stackslib/src/chainstate/coordinator/comm.rs:100:9: replace SignalBools::activated_signal -> bool with true
+stackslib/src/chainstate/coordinator/comm.rs:124:9: replace CoordinatorReceivers::wait_on -> u8 with 0
+stackslib/src/chainstate/coordinator/comm.rs:134:9: replace CoordinatorChannels::announce_new_stacks_block -> bool with true
+stackslib/src/chainstate/coordinator/comm.rs:134:9: replace CoordinatorChannels::announce_new_stacks_block -> bool with false
+stackslib/src/chainstate/coordinator/comm.rs:142:9: replace CoordinatorChannels::announce_new_burn_block -> bool with false
+stackslib/src/chainstate/coordinator/comm.rs:150:9: replace CoordinatorChannels::stop_chains_coordinator -> bool with true
+stackslib/src/chainstate/coordinator/comm.rs:150:9: replace CoordinatorChannels::stop_chains_coordinator -> bool with false
+stackslib/src/chainstate/coordinator/comm.rs:158:9: replace CoordinatorChannels::is_stopped -> bool with false
+stackslib/src/chainstate/coordinator/comm.rs:167:9: replace CoordinatorChannels::get_sortitions_processed -> u64 with 0
+stackslib/src/chainstate/coordinator/comm.rs:171:9: replace CoordinatorChannels::wait_for_sortitions_processed -> bool with true
+stackslib/src/chainstate/coordinator/comm.rs:171:9: replace CoordinatorChannels::wait_for_sortitions_processed -> bool with false
+stackslib/src/chainstate/coordinator/comm.rs:192:9: replace CoordinatorChannels::wait_for_stacks_blocks_processed -> bool with false
+stackslib/src/chainstate/stacks/address.rs:89:9: replace <impl Display for PoxAddress>::fmt -> std::fmt::Result with Ok(Default::default())
+stackslib/src/chainstate/stacks/auth.rs:378:9: replace SinglesigSpendingCondition::pop_signature -> Option<TransactionAuthField> with None
+stackslib/src/chainstate/stacks/block.rs:411:9: replace StacksBlock::is_first_mined -> bool with false
+stackslib/src/chainstate/stacks/block.rs:894:9: replace StacksMicroblock::validate_transactions_static -> bool with true
+stackslib/src/chainstate/stacks/boot/mod.rs:171:9: replace PoxStartCycleInfo::is_empty -> bool with false
+stackslib/src/chainstate/stacks/boot/mod.rs:486:9: replace StacksChainState::get_total_ustx_stacked -> Result<u128, Error> with Ok(0)
+stackslib/src/chainstate/stacks/boot/mod.rs:658:9: replace StacksChainState::get_threshold_from_participation -> u128 with 0
+stackslib/src/chainstate/stacks/db/mod.rs:308:9: replace StacksHeaderInfo::is_first_mined -> bool with true
+stackslib/src/chainstate/stacks/db/mod.rs:465:9: replace ClarityTx<'a, 'b>::rollback_unconfirmed -> () with ()
+stackslib/src/chainstate/stacks/db/mod.rs:527:9: replace ChainstateTx<'a>::log_transactions_processed with ()
+stackslib/src/chainstate/stacks/db/mod.rs:998:9: replace StacksChainState::add_indexes -> Result<(), Error> with Ok(())
+stackslib/src/chainstate/stacks/events.rs:37:9: replace TransactionOrigin::serialize_to_dbstring -> String with "xyzzy".into()
+stackslib/src/chainstate/stacks/index/mod.rs:306:9: replace MARFValue::to_value_hash -> TrieHash with Default::default()
+stackslib/src/chainstate/stacks/miner.rs:89:9: replace MinerStatus::add_blocked with ()
+stackslib/src/chainstate/stacks/miner.rs:106:9: replace MinerStatus::get_spend_amount -> u64 with 0
+stackslib/src/chainstate/stacks/miner.rs:122:5: replace signal_mining_blocked with ()
+stackslib/src/chainstate/stacks/miner.rs:110:9: replace MinerStatus::set_spend_amount with ()
+stackslib/src/chainstate/stacks/miner.rs:146:5: replace get_mining_spend_amount -> u64 with 1
+stackslib/src/chainstate/stacks/miner.rs:146:5: replace get_mining_spend_amount -> u64 with 0
+stackslib/src/chainstate/stacks/miner.rs:156:5: replace set_mining_spend_amount with ()
+stackslib/src/chainstate/stacks/miner.rs:382:9: replace TransactionResult::log_transaction_skipped with ()
+stackslib/src/chainstate/stacks/miner.rs:496:9: replace TransactionResult::is_ok -> bool with true
+stackslib/src/chainstate/stacks/miner.rs:496:9: replace TransactionResult::is_ok -> bool with false
+stackslib/src/chainstate/stacks/miner.rs:517:9: replace TransactionResult::is_err -> bool with true
+stackslib/src/chainstate/stacks/miner.rs:517:9: replace TransactionResult::is_err -> bool with false
+stackslib/src/chainstate/stacks/miner.rs:1340:9: replace StacksMicroblockBuilder<'a>::get_cost_so_far -> Option<ExecutionCost> with None
+stackslib/src/chainstate/stacks/miner.rs:1491:9: replace StacksBlockBuilder::set_parent_block -> () with ()
+stackslib/src/chainstate/stacks/miner.rs:1522:9: replace StacksBlockBuilder::reset_costs -> () with ()
+stackslib/src/chainstate/stacks/transaction.rs:1041:9: replace StacksTransactionSigner::complete -> bool with true
+stackslib/src/burnchains/bitcoin/address.rs:182:9: replace LegacyBitcoinAddress::to_b58 -> String with "xyzzy".into()
+stackslib/src/burnchains/bitcoin/address.rs:246:9: replace SegwitBitcoinAddress::witness_version -> u8 with 0
+stackslib/src/burnchains/bitcoin/address.rs:415:9: replace SegwitBitcoinAddress::is_p2tr -> bool with true
+stackslib/src/burnchains/bitcoin/address.rs:555:9: replace BitcoinAddress::is_segwit_p2tr -> bool with true
+stackslib/src/burnchains/bitcoin/address.rs:548:9: replace BitcoinAddress::is_segwit_p2wsh -> bool with true
+stackslib/src/burnchains/bitcoin/address.rs:619:9: replace <impl Address for LegacyBitcoinAddress>::to_bytes -> Vec<u8> with vec![]
+stackslib/src/burnchains/bitcoin/address.rs:619:9: replace <impl Address for LegacyBitcoinAddress>::to_bytes -> Vec<u8> with vec![0]
+stackslib/src/burnchains/bitcoin/address.rs:619:9: replace <impl Address for LegacyBitcoinAddress>::to_bytes -> Vec<u8> with vec![1]
+stackslib/src/burnchains/bitcoin/address.rs:630:9: replace <impl Address for LegacyBitcoinAddress>::is_burn -> bool with false
+stackslib/src/burnchains/bitcoin/address.rs:645:9: replace <impl Address for SegwitBitcoinAddress>::is_burn -> bool with false
+stackslib/src/burnchains/bitcoin/address.rs:656:9: replace <impl Display for LegacyBitcoinAddress>::fmt -> std::fmt::Result with Ok(Default::default())
+stackslib/src/burnchains/bitcoin/address.rs:677:9: replace <impl Address for BitcoinAddress>::to_bytes -> Vec<u8> with vec![]
+stackslib/src/burnchains/bitcoin/address.rs:677:9: replace <impl Address for BitcoinAddress>::to_bytes -> Vec<u8> with vec![0]
+stackslib/src/burnchains/bitcoin/address.rs:677:9: replace <impl Address for BitcoinAddress>::to_bytes -> Vec<u8> with vec![1]
+stackslib/src/burnchains/bitcoin/address.rs:692:9: replace <impl Address for BitcoinAddress>::is_burn -> bool with true
+stackslib/src/burnchains/bitcoin/address.rs:692:9: replace <impl Address for BitcoinAddress>::is_burn -> bool with false
+stackslib/src/burnchains/bitcoin/blocks.rs:62:9: replace <impl BurnHeaderIPC for BitcoinHeaderIPC>::height -> u64 with 0
+stackslib/src/burnchains/bitcoin/blocks.rs:168:9: replace <impl BitcoinMessageHandler for BitcoinBlockDownloader>::handle_message -> Result<bool, btc_error> with Ok(false)
+stackslib/src/burnchains/bitcoin/indexer.rs:95:5: replace get_bitcoin_stacks_epochs -> Vec<StacksEpoch> with vec![]
+stackslib/src/burnchains/bitcoin/blocks.rs:246:9: replace BitcoinBlockParser::allow_segwit_outputs -> bool with true
+stackslib/src/burnchains/bitcoin/indexer.rs:264:9: replace BitcoinIndexer::reconnect_peer -> Result<(), btc_error> with Ok(())
+stackslib/src/burnchains/bitcoin/indexer.rs:324:9: replace BitcoinIndexer::is_connected -> bool with false
+stackslib/src/burnchains/bitcoin/indexer.rs:336:9: replace BitcoinIndexer::peer_communicate -> Result<(), btc_error> with Ok(())
+stackslib/src/burnchains/bitcoin/indexer.rs:593:9: replace BitcoinIndexer::find_bitcoin_reorg -> Result<u64, btc_error> with Ok(0)
+stackslib/src/burnchains/bitcoin/indexer.rs:593:9: replace BitcoinIndexer::find_bitcoin_reorg -> Result<u64, btc_error> with Ok(1)
+stackslib/src/burnchains/bitcoin/indexer.rs:941:9: replace <impl BurnchainIndexer for BitcoinIndexer>::connect -> Result<(), burnchain_error> with Ok(())
+stackslib/src/burnchains/bitcoin/indexer.rs:946:9: replace <impl BurnchainIndexer for BitcoinIndexer>::get_headers_path -> String with String::new()
+stackslib/src/burnchains/bitcoin/indexer.rs:951:9: replace <impl BurnchainIndexer for BitcoinIndexer>::get_headers_height -> Result<u64, burnchain_error> with Ok(0)
+stackslib/src/burnchains/bitcoin/indexer.rs:951:9: replace <impl BurnchainIndexer for BitcoinIndexer>::get_headers_height -> Result<u64, burnchain_error> with Ok(1)
+stackslib/src/burnchains/bitcoin/indexer.rs:982:9: replace <impl BurnchainIndexer for BitcoinIndexer>::get_first_block_height -> u64 with 1
+stackslib/src/burnchains/bitcoin/indexer.rs:1007:9: replace <impl BurnchainIndexer for BitcoinIndexer>::get_first_block_header_timestamp -> Result<u64, burnchain_error> with Ok(1)
+stackslib/src/burnchains/bitcoin/indexer.rs:1033:9: replace <impl BurnchainIndexer for BitcoinIndexer>::get_stacks_epochs -> Vec<StacksEpoch> with vec![]
+stackslib/src/burnchains/bitcoin/indexer.rs:1073:9: replace <impl BurnchainIndexer for BitcoinIndexer>::find_chain_reorg -> Result<u64, burnchain_error> with Ok(0)
+stackslib/src/burnchains/bitcoin/indexer.rs:1097:9: replace <impl BurnchainIndexer for BitcoinIndexer>::sync_headers -> Result<u64, burnchain_error> with Ok(0)
+stackslib/src/burnchains/bitcoin/indexer.rs:1097:9: replace <impl BurnchainIndexer for BitcoinIndexer>::sync_headers -> Result<u64, burnchain_error> with Ok(1)
+stackslib/src/burnchains/bitcoin/indexer.rs:1169:9: replace <impl BurnchainHeaderReader for BitcoinIndexer>::get_burnchain_headers_height -> Result<u64, DBError> with Ok(0)
+stackslib/src/burnchains/bitcoin/indexer.rs:1169:9: replace <impl BurnchainHeaderReader for BitcoinIndexer>::get_burnchain_headers_height -> Result<u64, DBError> with Ok(1)
+stackslib/src/burnchains/bitcoin/indexer.rs:1177:9: replace <impl BurnchainHeaderReader for BitcoinIndexer>::find_burnchain_header_height -> Result<Option<u64>, DBError> with Ok(Some(0))
+stackslib/src/burnchains/bitcoin/network.rs:46:9: replace BitcoinIndexer::send_message -> Result<(), btc_error> with Ok(())
+stackslib/src/burnchains/bitcoin/network.rs:113:9: replace BitcoinIndexer::handle_message -> Result<bool, btc_error> with Ok(false)
+stackslib/src/burnchains/bitcoin/network.rs:151:9: replace BitcoinIndexer::peer_handshake -> Result<u64, btc_error> with Ok(0)
+stackslib/src/burnchains/bitcoin/network.rs:151:9: replace BitcoinIndexer::peer_handshake -> Result<u64, btc_error> with Ok(1)
+stackslib/src/burnchains/bitcoin/network.rs:174:9: replace BitcoinIndexer::connect_handshake_backoff -> Result<u64, btc_error> with Ok(0)
+stackslib/src/burnchains/bitcoin/network.rs:233:9: replace BitcoinIndexer::send_version -> Result<(), btc_error> with Ok(())
+stackslib/src/burnchains/bitcoin/network.rs:266:9: replace BitcoinIndexer::handle_version -> Result<(), btc_error> with Ok(())
+stackslib/src/burnchains/bitcoin/network.rs:284:9: replace BitcoinIndexer::send_verack -> Result<(), btc_error> with Ok(())
+stackslib/src/burnchains/bitcoin/network.rs:325:9: replace BitcoinIndexer::handle_pong -> Result<(), btc_error> with Ok(())
+stackslib/src/burnchains/bitcoin/network.rs:293:9: replace BitcoinIndexer::handle_verack -> Result<(), btc_error> with Ok(())
+stackslib/src/burnchains/bitcoin/network.rs:358:9: replace BitcoinIndexer::send_getdata -> Result<(), btc_error> with Ok(())
+stackslib/src/burnchains/bitcoin/spv.rs:60:53: replace * with /
+stackslib/src/burnchains/bitcoin/spv.rs:60:48: replace * with +
+stackslib/src/burnchains/bitcoin/spv.rs:60:48: replace * with /
+stackslib/src/burnchains/bitcoin/spv.rs:60:43: replace * with /
+stackslib/src/burnchains/bitcoin/spv.rs:273:9: replace SpvClient::db_set_version -> Result<(), btc_error> with Ok(())
+stackslib/src/burnchains/bitcoin/spv.rs:354:9: replace SpvClient::is_initialized -> Result<(), btc_error> with Ok(())
+stackslib/src/burnchains/bitcoin/spv.rs:361:9: replace SpvClient::set_scan_range -> () with ()
+stackslib/src/burnchains/bitcoin/spv.rs:384:9: replace SpvClient::find_highest_work_score_interval -> Result<u64, btc_error> with Ok(0)
+stackslib/src/burnchains/bitcoin/spv.rs:374:9: replace SpvClient::get_interval_work -> Uint256 with Default::default()
+stackslib/src/burnchains/bitcoin/spv.rs:493:9: replace SpvClient::get_chain_work -> Result<Uint256, btc_error> with Ok(Default::default())
+stackslib/src/burnchains/bitcoin/spv.rs:662:9: replace SpvClient::is_empty -> Result<bool, btc_error> with Ok(false)
+stackslib/src/burnchains/bitcoin/spv.rs:687:9: replace SpvClient::find_block_header_height -> Result<Option<u64>, btc_error> with Ok(Some(0))
+stackslib/src/burnchains/bitcoin/spv.rs:687:9: replace SpvClient::find_block_header_height -> Result<Option<u64>, btc_error> with Ok(Some(1))
+stackslib/src/burnchains/bitcoin/spv.rs:820:9: replace SpvClient::handle_headers -> Result<(), btc_error> with Ok(())
+stackslib/src/burnchains/bitcoin/spv.rs:1069:9: replace SpvClient::get_target_between_headers -> (u32, Uint256) with (0, Default::default())
+stackslib/src/burnchains/bitcoin/spv.rs:1069:9: replace SpvClient::get_target_between_headers -> (u32, Uint256) with (1, Default::default())
+stackslib/src/burnchains/bitcoin/spv.rs:1110:9: replace SpvClient::get_target -> Result<Option<(u32, Uint256)>, btc_error> with Ok(None)
+stackslib/src/burnchains/bitcoin/spv.rs:1110:9: replace SpvClient::get_target -> Result<Option<(u32, Uint256)>, btc_error> with Ok(Some((1, Default::default())))
+stackslib/src/burnchains/bitcoin/spv.rs:1191:9: replace SpvClient::send_next_getheaders -> Result<(), btc_error> with Ok(())
+stackslib/src/burnchains/bitcoin/spv.rs:1216:9: replace <impl BitcoinMessageHandler for SpvClient>::begin_session -> Result<bool, btc_error> with Ok(false)
+stackslib/src/burnchains/bitcoin/spv.rs:1243:9: replace <impl BitcoinMessageHandler for SpvClient>::handle_message -> Result<bool, btc_error> with Ok(true)
+stackslib/src/burnchains/bitcoin/spv.rs:1243:9: replace <impl BitcoinMessageHandler for SpvClient>::handle_message -> Result<bool, btc_error> with Ok(false)
+stackslib/src/clarity_vm/database/marf.rs:297:9: replace <impl ClarityBackingStore for ReadOnlyMarfStore<'a>>::get_cc_special_cases_handler -> Option<SpecialCaseHandler> with None
+stackslib/src/clarity_vm/database/marf.rs:434:9: replace <impl ClarityBackingStore for ReadOnlyMarfStore<'a>>::put_all with ()
+stackslib/src/clarity_vm/database/marf.rs:573:9: replace <impl ClarityBackingStore for WritableMarfStore<'a>>::get_with_proof -> Option<(String, Vec<u8>)> with Some(("xyzzy".into(), vec![]))
+stackslib/src/chainstate/burn/db/sortdb.rs:92:45: replace + with -
+stackslib/src/chainstate/burn/db/sortdb.rs:92:40: replace * with /
+stackslib/src/chainstate/burn/db/sortdb.rs:841:9: replace db_keys::pox_last_anchor -> &'static str with ""
+stackslib/src/chainstate/burn/db/sortdb.rs:853:9: replace db_keys::pox_last_selected_anchor_txid -> &'static str with ""
+stackslib/src/chainstate/burn/db/sortdb.rs:849:9: replace db_keys::pox_last_selected_anchor -> &'static str with "xyzzy"
+stackslib/src/chainstate/burn/db/sortdb.rs:853:9: replace db_keys::pox_last_selected_anchor_txid -> &'static str with "xyzzy"
+stackslib/src/chainstate/burn/db/sortdb.rs:857:9: replace db_keys::pox_affirmation_map -> &'static str with "xyzzy"
+stackslib/src/chainstate/burn/db/sortdb.rs:857:9: replace db_keys::pox_affirmation_map -> &'static str with ""
+stackslib/src/chainstate/burn/db/sortdb.rs:865:9: replace db_keys::pox_reward_set_size -> &'static str with "xyzzy"
+stackslib/src/chainstate/burn/db/sortdb.rs:873:9: replace db_keys::pox_reward_set_payouts_key -> String with String::new()
+stackslib/src/chainstate/burn/db/sortdb.rs:877:9: replace db_keys::pox_reward_set_payouts_value -> String with String::new()
+stackslib/src/chainstate/burn/db/sortdb.rs:881:9: replace db_keys::pox_reward_set_payouts_decode -> (Vec<PoxAddress>, u128) with (vec![], 1)
+stackslib/src/chainstate/burn/db/sortdb.rs:887:9: replace db_keys::pox_identifier -> &'static str with ""
+stackslib/src/chainstate/burn/db/sortdb.rs:891:9: replace db_keys::initial_mining_bonus_remaining -> &'static str with "xyzzy"
+stackslib/src/chainstate/burn/db/sortdb.rs:895:9: replace db_keys::initial_mining_bonus_per_block -> &'static str with "xyzzy"
+stackslib/src/chainstate/burn/db/sortdb.rs:908:9: replace db_keys::last_sortition -> &'static str with "xyzzy"
+stackslib/src/chainstate/burn/db/sortdb.rs:923:9: replace db_keys::stacks_block_max_arrival_index -> String with "xyzzy".into()
+stackslib/src/chainstate/burn/db/sortdb.rs:1222:9: replace SortitionHandleTx<'a>::is_leader_key_consumed -> Result<bool, db_error> with Ok(false)
+stackslib/src/chainstate/burn/db/sortdb.rs:1578:9: replace SortitionHandleTx<'a>::get_last_selected_anchor_block_hash -> Result<Option<BlockHeaderHash>, db_error> with Ok(None)
+stackslib/src/chainstate/burn/db/sortdb.rs:1682:9: replace SortitionHandleConn<'a>::get_last_anchor_block_txid -> Result<Option<Txid>, db_error> with Ok(None)
+stackslib/src/chainstate/burn/db/sortdb.rs:1666:9: replace SortitionHandleConn<'a>::get_reward_set_size_at -> Result<u16, db_error> with Ok(1)
+stackslib/src/chainstate/burn/db/sortdb.rs:1708:9: replace SortitionHandleConn<'a>::get_last_selected_anchor_block_txid -> Result<Option<Txid>, db_error> with Ok(None)
+stackslib/src/chainstate/burn/db/sortdb.rs:1782:9: replace SortitionHandleConn<'a>::get_tip_snapshot -> Result<Option<BlockSnapshot>, db_error> with Ok(None)
+stackslib/src/chainstate/burn/db/sortdb.rs:1814:9: replace SortitionHandleConn<'a>::get_winning_user_burns_by_block -> Result<Vec<UserBurnSupportOp>, db_error> with Ok(vec![])
+stackslib/src/chainstate/burn/db/sortdb.rs:4310:9: replace SortitionDB::get_leader_keys_by_block -> Result<Vec<LeaderKeyRegisterOp>, db_error> with Ok(vec![])
+stackslib/src/chainstate/burn/db/sortdb.rs:4620:9: replace SortitionDB::static_get_last_epoch_2_05_reward_cycle -> Result<u64, db_error> with Ok(0)
+stackslib/src/chainstate/burn/db/sortdb.rs:4620:9: replace SortitionDB::static_get_last_epoch_2_05_reward_cycle -> Result<u64, db_error> with Ok(1)
+stackslib/src/chainstate/burn/db/sortdb.rs:5801:9: replace <impl ChainstateDB for SortitionDB>::backup -> Result<(), db_error> with Ok(())
+stackslib/src/chainstate/burn/operations/leader_block_commit.rs:699:9: replace LeaderBlockCommitOp::check_after_pox_sunset -> Result<(), op_error> with Ok(())
+stackslib/src/chainstate/burn/operations/stack_stx.rs:346:9: replace StackStxOp::check -> Result<(), op_error> with Ok(())
+stackslib/src/chainstate/stacks/boot/docs.rs:143:5: replace make_json_boot_contracts_reference -> String with "xyzzy".into()
+stackslib/src/chainstate/stacks/db/accounts.rs:240:9: replace MinerPaymentSchedule::block_reward_so_far -> u128 with 0
+stackslib/src/chainstate/stacks/db/accounts.rs:240:9: replace MinerPaymentSchedule::block_reward_so_far -> u128 with 1
+stackslib/src/chainstate/stacks/db/blocks.rs:201:9: replace <impl BlockEventDispatcher for DummyEventDispatcher>::announce_burn_block with ()
+stackslib/src/chainstate/stacks/db/blocks.rs:326:9: replace StagingBlock::is_first_mined -> bool with true
+stackslib/src/chainstate/stacks/db/blocks.rs:597:9: replace StacksChainState::has_valid_block_indexed -> Result<bool, Error> with Ok(false)
+stackslib/src/chainstate/stacks/db/blocks.rs:748:9: replace StacksChainState::list_blocks -> Result<Vec<(ConsensusHash, BlockHeaderHash)>, Error> with Ok(vec![])
+stackslib/src/chainstate/stacks/db/blocks.rs:760:9: replace StacksChainState::get_all_staging_block_headers -> Result<Vec<StagingBlock>, Error> with Ok(vec![])
+stackslib/src/chainstate/stacks/db/blocks.rs:886:9: replace StacksChainState::empty_stream -> Result<Option<Vec<StacksMicroblock>>, Error> with Ok(Some(vec![]))
+stackslib/src/chainstate/stacks/db/blocks.rs:1064:9: replace StacksChainState::load_staging_block_user_supports -> Result<Vec<StagingUserBurnSupport>, Error> with Ok(vec![])
+stackslib/src/chainstate/stacks/db/blocks.rs:1489:9: replace StacksChainState::get_parent_consensus_hash -> Result<Option<ConsensusHash>, Error> with Ok(None)
+stackslib/src/chainstate/stacks/db/blocks.rs:1808:9: replace StacksChainState::get_staging_block_consensus_hashes -> Result<Vec<ConsensusHash>, Error> with Ok(vec![])
+stackslib/src/chainstate/stacks/db/blocks.rs:1869:9: replace StacksChainState::has_processed_microblocks -> Result<bool, Error> with Ok(false)
+stackslib/src/chainstate/stacks/db/blocks.rs:2181:9: replace StacksChainState::has_staging_block -> Result<bool, Error> with Ok(false)
+stackslib/src/chainstate/stacks/db/blocks.rs:2746:9: replace StacksChainState::has_staging_microblock_indexed -> Result<bool, Error> with Ok(true)
+stackslib/src/chainstate/stacks/db/blocks.rs:2746:9: replace StacksChainState::has_staging_microblock_indexed -> Result<bool, Error> with Ok(false)
+stackslib/src/chainstate/stacks/db/blocks.rs:2843:9: replace StacksChainState::has_descendant_microblock_indexed -> Result<bool, Error> with Ok(false)
+stackslib/src/chainstate/stacks/db/blocks.rs:2981:9: replace StacksChainState::has_higher_unprocessed_blocks -> Result<bool, Error> with Ok(false)
+stackslib/src/chainstate/stacks/db/blocks.rs:3854:9: replace StacksChainState::count_attachable_staging_blocks -> Result<u64, Error> with Ok(0)
+stackslib/src/chainstate/stacks/db/blocks.rs:3854:9: replace StacksChainState::count_attachable_staging_blocks -> Result<u64, Error> with Ok(1)
+stackslib/src/chainstate/stacks/db/blocks.rs:3888:9: replace StacksChainState::measure_block_wait_time -> Result<Vec<i64>, Error> with Ok(vec![-1])
+stackslib/src/chainstate/stacks/db/blocks.rs:3901:9: replace StacksChainState::measure_block_download_time -> Result<Vec<i64>, Error> with Ok(vec![])
+stackslib/src/chainstate/stacks/db/blocks.rs:3901:9: replace StacksChainState::measure_block_download_time -> Result<Vec<i64>, Error> with Ok(vec![-1])
+stackslib/src/chainstate/stacks/db/blocks.rs:5713:9: replace StacksChainState::check_block_attachment -> bool with true
+stackslib/src/chainstate/stacks/db/blocks.rs:6326:9: replace StacksChainState::get_stacks_chain_tips_at_height -> Result<Vec<StagingBlock>, Error> with Ok(vec![])
+stackslib/src/chainstate/stacks/db/blocks.rs:6351:9: replace StacksChainState::get_stacks_block_height -> Result<Option<u64>, Error> with Ok(Some(1))
+stackslib/src/chainstate/stacks/db/transactions.rs:274:9: replace StacksTransactionReceipt::is_coinbase_tx -> bool with true
+stackslib/src/chainstate/stacks/db/unconfirmed.rs:587:9: replace StacksChainState::refresh_unconfirmed_state -> Result<ProcessedUnconfirmedState, Error> with Ok(Default::default())
+stackslib/src/chainstate/stacks/db/unconfirmed.rs:621:9: replace StacksChainState::refresh_unconfirmed_readonly -> Result<(), Error> with Ok(())
+stackslib/src/chainstate/stacks/index/bits.rs:85:5: replace check_node_id -> bool with true
+stackslib/src/chainstate/stacks/index/bits.rs:235:5: replace read_block_identifier -> Result<u32, Error> with Ok(0)
+stackslib/src/chainstate/stacks/index/bits.rs:235:5: replace read_block_identifier -> Result<u32, Error> with Ok(1)
+stackslib/src/chainstate/stacks/index/cache.rs:89:9: replace TrieCacheState<T>::load_node_and_hash -> Option<(TrieNodeType, TrieHash)> with None
+stackslib/src/chainstate/stacks/index/cache.rs:120:9: replace TrieCacheState<T>::store_node_and_hash with ()
+stackslib/src/chainstate/stacks/index/cache.rs:173:9: replace TrieCache<T>::default -> TrieCache<T> with TrieCache::new(Default::default())
+stackslib/src/chainstate/stacks/index/cache.rs:256:9: replace TrieCache<T>::store_node_and_hash with ()
+stackslib/src/chainstate/stacks/index/cache.rs:288:9: replace TrieCache<T>::store_node_hash with ()
+stackslib/src/chainstate/stacks/index/cache.rs:312:9: replace TrieCache<T>::load_block_hash -> Option<T> with None
+stackslib/src/chainstate/stacks/index/file.rs:129:9: replace TrieFile::get_path -> String with String::new()
+stackslib/src/chainstate/stacks/index/file.rs:129:9: replace TrieFile::get_path -> String with "xyzzy".into()
+stackslib/src/chainstate/stacks/index/file.rs:214:9: replace TrieFile::post_migrate_vacuum with ()
+stackslib/src/chainstate/stacks/index/file.rs:493:9: replace <impl Write for TrieFileRAM>::flush -> io::Result<()> with Ok(())
+stackslib/src/chainstate/stacks/index/marf.rs:135:9: replace MarfConnection::get_with_proof -> Result<Option<(MARFValue, TrieMerkleProof<T>)>, Error> with Ok(None)
+stackslib/src/chainstate/stacks/index/marf.rs:150:9: replace MarfConnection::get_block_height -> Result<Option<u32>, Error> with Ok(Some(0))
+stackslib/src/chainstate/stacks/index/marf.rs:150:9: replace MarfConnection::get_block_height -> Result<Option<u32>, Error> with Ok(Some(1))
+stackslib/src/chainstate/stacks/index/marf.rs:155:9: replace MarfConnection::get_root_hash_at -> Result<TrieHash, Error> with Ok(Default::default())
+stackslib/src/chainstate/stacks/index/marf.rs:1486:9: replace MARF<T>::get_open_chain_tip -> Option<&T> with None
+stackslib/src/chainstate/stacks/index/marf.rs:1491:9: replace MARF<T>::get_open_chain_tip_height -> Option<u32> with Some(0)
+stackslib/src/chainstate/stacks/index/marf.rs:1491:9: replace MARF<T>::get_open_chain_tip_height -> Option<u32> with None
+stackslib/src/chainstate/stacks/index/node.rs:224:5: replace ptrs_fmt -> String with "xyzzy".into()
+stackslib/src/chainstate/stacks/index/node.rs:49:9: replace <impl Display for CursorError>::fmt -> fmt::Result with Ok(Default::default())
+stackslib/src/chainstate/stacks/index/node.rs:550:9: replace TrieCursor<T>::repair_backptr_step_backptr -> () with ()
+stackslib/src/chainstate/stacks/index/node.rs:625:9: replace <impl Debug for TrieLeaf>::fmt -> fmt::Result with Ok(Default::default())
+stackslib/src/chainstate/stacks/index/node.rs:724:9: replace <impl Debug for TrieNode48>::fmt -> fmt::Result with Ok(Default::default())
+stackslib/src/chainstate/stacks/index/node.rs:735:9: replace <impl PartialEq for TrieNode48>::eq -> bool with true
+stackslib/src/chainstate/stacks/index/node.rs:775:9: replace <impl Debug for TrieNode256>::fmt -> fmt::Result with Ok(Default::default())
+stackslib/src/chainstate/stacks/index/node.rs:786:9: replace <impl PartialEq for TrieNode256>::eq -> bool with true
+stackslib/src/chainstate/stacks/index/node.rs:1226:9: replace <impl TrieNode for TrieLeaf>::replace -> bool with true
+stackslib/src/chainstate/stacks/index/node.rs:1346:9: replace TrieNodeType::max_ptrs -> usize with 1
+stackslib/src/chainstate/stacks/index/proofs.rs:117:9: replace <impl PartialEq for TrieMerkleProofType<T>>::eq -> bool with false
+stackslib/src/chainstate/stacks/index/proofs.rs:148:5: replace hashes_fmt -> String with "xyzzy".into()
+stackslib/src/chainstate/stacks/index/proofs.rs:226:5: replace serialize_id_hash_node -> Result<(), codec_error> with Ok(())
+stackslib/src/chainstate/stacks/index/proofs.rs:268:9: replace <impl StacksMessageCodec for ProofTrieNode<T>>::consensus_serialize -> Result<(), codec_error> with Ok(())
+stackslib/src/chainstate/stacks/index/proofs.rs:355:9: replace <impl StacksMessageCodec for TrieMerkleProof<T>>::consensus_serialize -> Result<(), codec_error> with Ok(())
+stackslib/src/chainstate/stacks/index/proofs.rs:284:9: replace <impl StacksMessageCodec for TrieMerkleProofType<T>>::consensus_serialize -> Result<(), codec_error> with Ok(())
+stackslib/src/chainstate/stacks/index/proofs.rs:366:9: replace TrieMerkleProof<T>::to_hex -> String with "xyzzy".into()
+stackslib/src/chainstate/stacks/index/proofs.rs:1009:9: replace TrieMerkleProof<T>::is_proof_well_formed -> bool with true
+stackslib/src/chainstate/stacks/index/storage.rs:89:9: replace <impl BlockMap for TrieFileStorage<T>>::get_block_id -> Result<u32, Error> with Ok(1)
+stackslib/src/chainstate/stacks/index/storage.rs:94:9: replace <impl BlockMap for TrieFileStorage<T>>::get_block_id_caching -> Result<u32, Error> with Ok(1)
+stackslib/src/chainstate/stacks/index/storage.rs:159:9: replace <impl BlockMap for TrieStorageTransaction<'a, T>>::is_block_hash_cached -> bool with true
+stackslib/src/chainstate/stacks/index/storage.rs:196:9: replace <impl BlockMap for TrieSqlHashMapCursor<'_, T>>::get_block_id_caching -> Result<u32, Error> with Ok(0)
+stackslib/src/chainstate/stacks/index/storage.rs:196:9: replace <impl BlockMap for TrieSqlHashMapCursor<'_, T>>::get_block_id_caching -> Result<u32, Error> with Ok(1)
+stackslib/src/chainstate/stacks/index/storage.rs:240:9: replace UncommittedState<T>::format -> Result<(), Error> with Ok(())
+stackslib/src/chainstate/stacks/index/storage.rs:250:9: replace UncommittedState<T>::size_hint -> usize with 0
+stackslib/src/chainstate/stacks/index/storage.rs:250:9: replace UncommittedState<T>::size_hint -> usize with 1
+stackslib/src/chainstate/stacks/index/storage.rs:303:9: replace UncommittedState<T>::write_node_hash -> Result<(), Error> with Ok(())
+stackslib/src/chainstate/stacks/index/storage.rs:970:9: replace TrieRAM<T>::size_hint -> usize with 0
+stackslib/src/chainstate/stacks/index/storage.rs:1585:9: replace TrieFileStorage<T>::reset_benchmarks with ()
+stackslib/src/chainstate/stacks/index/storage.rs:1890:9: replace TrieStorageTransaction<'a, T>::format -> Result<(), Error> with Ok(())
+stackslib/src/chainstate/stacks/index/storage.rs:1963:9: replace TrieStorageConnection<'a, T>::readonly -> bool with false
+stackslib/src/chainstate/stacks/index/storage.rs:1971:9: replace TrieStorageConnection<'a, T>::set_cached_ancestor_hashes_bytes with ()
+stackslib/src/chainstate/stacks/index/storage.rs:2034:9: replace TrieStorageConnection<'a, T>::recover -> Result<(), Error> with Ok(())
+stackslib/src/chainstate/stacks/index/storage.rs:2251:9: replace TrieStorageConnection<'a, T>::get_block_identifier -> Option<u32> with None
+stackslib/src/chainstate/stacks/index/storage.rs:2720:9: replace TrieStorageConnection<'a, T>::num_blocks -> usize with 1
+stackslib/src/chainstate/stacks/index/trie_sql.rs:126:5: replace get_migrated_version -> u64 with 1
+stackslib/src/chainstate/stacks/index/trie_sql.rs:187:5: replace get_mined_block_identifier -> Result<u32, Error> with Ok(0)
+stackslib/src/chainstate/stacks/index/trie_sql.rs:342:5: replace write_trie_blob_to_mined -> Result<u32, Error> with Ok(1)
+stackslib/src/chainstate/stacks/index/trie_sql.rs:469:5: replace read_node_hash_bytes_by_bhh -> Result<(), Error> with Ok(())
+stackslib/src/chainstate/stacks/index/trie_sql.rs:601:5: replace get_node_hash_bytes_by_bhh -> Result<TrieHash, Error> with Ok(Default::default())
+stackslib/src/chainstate/stacks/index/trie_sql.rs:662:5: replace lock_bhh_for_extension -> Result<bool, Error> with Ok(true)
+stackslib/src/chainstate/stacks/index/trie_sql.rs:703:5: replace clear_lock_data -> Result<(), Error> with Ok(())
+stackslib/src/chainstate/stacks/index/trie_sql.rs:708:5: replace clear_tables -> Result<(), Error> with Ok(())

@@ -1,0 +1,97 @@
+stackslib/src/net/chat.rs:671:9: replace ConversationP2P::supports_mempool_query -> bool with false
+stackslib/src/net/connection.rs:280:9: replace <impl Write for NetworkReplyHandle<P>>::flush -> io::Result<()> with Ok(())
+stackslib/src/net/connection.rs:561:9: replace ConnectionInbox<P>::consume_preamble -> Result<(Option<P::Preamble>, usize), net_error> with Ok((None, 0))
+stackslib/src/net/connection.rs:618:9: replace ConnectionInbox<P>::buffer_message_bytes -> usize with 0
+stackslib/src/net/connection.rs:1193:9: replace ConnectionOutbox<P>::num_messages -> usize with 1
+stackslib/src/net/connection.rs:1353:9: replace NetworkConnection<P>::recv_data -> Result<usize, net_error> with Ok(1)
+stackslib/src/net/db.rs:507:9: replace PeerDB::apply_schema_2 -> Result<(), db_error> with Ok(())
+stackslib/src/net/db.rs:1694:9: replace PeerDB::get_random_walk_neighbors -> Result<Vec<Neighbor>, db_error> with Ok(vec![])
+stackslib/src/net/db.rs:1744:9: replace PeerDB::asn_lookup -> Result<Option<u32>, db_error> with Ok(Some(0))
+stackslib/src/net/db.rs:1754:9: replace PeerDB::asn_count -> Result<u64, db_error> with Ok(0)
+stackslib/src/net/db.rs:1761:9: replace PeerDB::get_frontier_size -> Result<u64, db_error> with Ok(1)
+stackslib/src/net/httpcore.rs:1578:9: replace PeerNetwork::connect_or_send_http_request -> Result<usize, NetError> with Ok(1)
+stackslib/src/net/inv.rs:151:9: replace PeerBlocksInv::has_ith_anchor_block -> bool with true
+stackslib/src/net/inv.rs:286:9: replace PeerBlocksInv::truncate_pox_inventory -> u64 with 0
+stackslib/src/net/inv.rs:286:9: replace PeerBlocksInv::truncate_pox_inventory -> u64 with 1
+stackslib/src/net/inv.rs:389:9: replace PeerBlocksInv::clear_block_bit with ()
+stackslib/src/net/inv.rs:584:9: replace NeighborBlockStats::reset_block_scan with ()
+stackslib/src/net/p2p.rs:530:9: replace PeerNetwork::bind -> Result<(), net_error> with Ok(())
+stackslib/src/net/p2p.rs:2399:9: replace PeerNetwork::do_network_mempool_sync -> Option<Vec<StacksTransaction>> with None
+stackslib/src/net/p2p.rs:2444:9: replace PeerNetwork::begin_learn_public_ip -> Result<bool, net_error> with Ok(true)
+stackslib/src/net/p2p.rs:3405:9: replace PeerNetwork::mempool_sync_pick_outbound_peer -> Result<Option<MempoolSyncState>, net_error> with Ok(None)
+stackslib/src/net/p2p.rs:3466:9: replace PeerNetwork::mempool_sync_begin_resolve_data_url -> Result<Option<MempoolSyncState>, net_error> with Ok(None)
+stackslib/src/net/p2p.rs:3521:9: replace PeerNetwork::mempool_sync_resolve_data_url -> Result<(bool, Option<SocketAddr>), net_error> with Ok((false, None))
+stackslib/src/net/p2p.rs:3569:9: replace PeerNetwork::mempool_sync_send_query -> Result<(bool, Option<usize>), net_error> with Ok((true, None))
+stackslib/src/net/p2p.rs:3569:9: replace PeerNetwork::mempool_sync_send_query -> Result<(bool, Option<usize>), net_error> with Ok((true, Some(0)))
+stackslib/src/net/p2p.rs:3569:9: replace PeerNetwork::mempool_sync_send_query -> Result<(bool, Option<usize>), net_error> with Ok((false, None))
+stackslib/src/net/p2p.rs:3569:9: replace PeerNetwork::mempool_sync_send_query -> Result<(bool, Option<usize>), net_error> with Ok((false, Some(0)))
+stackslib/src/net/p2p.rs:3569:9: replace PeerNetwork::mempool_sync_send_query -> Result<(bool, Option<usize>), net_error> with Ok((false, Some(1)))
+stackslib/src/net/p2p.rs:3591:9: replace PeerNetwork::mempool_sync_recv_response -> Result<(bool, Option<Txid>, Option<Vec<StacksTransaction>>), net_error> with Ok((true, None, None))
+stackslib/src/net/p2p.rs:3591:9: replace PeerNetwork::mempool_sync_recv_response -> Result<(bool, Option<Txid>, Option<Vec<StacksTransaction>>), net_error> with Ok((true, None, Some(vec![])))
+stackslib/src/net/p2p.rs:3591:9: replace PeerNetwork::mempool_sync_recv_response -> Result<(bool, Option<Txid>, Option<Vec<StacksTransaction>>), net_error> with Ok((false, None, None))
+stackslib/src/net/p2p.rs:3591:9: replace PeerNetwork::mempool_sync_recv_response -> Result<(bool, Option<Txid>, Option<Vec<StacksTransaction>>), net_error> with Ok((false, None, Some(vec![])))
+stackslib/src/net/p2p.rs:3643:9: replace PeerNetwork::do_mempool_sync -> (bool, Option<Vec<StacksTransaction>>) with (true, None)
+stackslib/src/net/p2p.rs:3643:9: replace PeerNetwork::do_mempool_sync -> (bool, Option<Vec<StacksTransaction>>) with (true, Some(vec![]))
+stackslib/src/net/p2p.rs:3643:9: replace PeerNetwork::do_mempool_sync -> (bool, Option<Vec<StacksTransaction>>) with (false, None)
+stackslib/src/net/p2p.rs:3643:9: replace PeerNetwork::do_mempool_sync -> (bool, Option<Vec<StacksTransaction>>) with (false, Some(vec![]))
+stackslib/src/net/p2p.rs:5537:9: replace PeerNetwork::store_transaction -> bool with true
+stackslib/src/net/p2p.rs:5537:9: replace PeerNetwork::store_transaction -> bool with false
+stackslib/src/net/p2p.rs:5583:9: replace PeerNetwork::store_transactions -> Result<(), net_error> with Ok(())
+stackslib/src/net/poll.rs:87:9: replace NetworkState::num_events -> usize with 0
+stackslib/src/net/poll.rs:87:9: replace NetworkState::num_events -> usize with 1
+stackslib/src/net/rpc.rs:517:9: replace ConversationHttp::get_connection_time -> u64 with 0
+stackslib/src/net/rpc.rs:517:9: replace ConversationHttp::get_connection_time -> u64 with 1
+stackslib/src/net/rpc.rs:602:9: replace ConversationHttp::clear_timeouts -> () with ()
+stackslib/src/net/server.rs:91:9: replace HttpPeer::find_free_conversation -> Option<usize> with Some(0)
+stackslib/src/net/server.rs:91:9: replace HttpPeer::find_free_conversation -> Option<usize> with None
+stackslib/src/net/rpc.rs:630:9: replace ConversationHttp::send -> Result<usize, net_error> with Ok(1)
+stackslib/src/net/server.rs:91:9: replace HttpPeer::find_free_conversation -> Option<usize> with Some(1)
+stackslib/src/net/server.rs:103:9: replace HttpPeer::get_conversation -> Option<&mut ConversationHttp> with None
+stackslib/src/net/server.rs:175:9: replace HttpPeer::can_register_http -> Result<(), net_error> with Ok(())
+stackslib/src/net/server.rs:220:9: replace HttpPeer::register_http -> Result<(), net_error> with Ok(())
+stackslib/src/net/server.rs:285:9: replace HttpPeer::deregister_http -> () with ()
+stackslib/src/net/server.rs:552:9: replace HttpPeer::process_ready_sockets -> (Vec<StacksMessageType>, Vec<usize>) with (vec![], vec![0])
+stackslib/src/net/server.rs:552:9: replace HttpPeer::process_ready_sockets -> (Vec<StacksMessageType>, Vec<usize>) with (vec![], vec![1])
+stackslib/src/net/server.rs:605:9: replace HttpPeer::flush_conversations -> Vec<usize> with vec![]
+stackslib/src/net/server.rs:605:9: replace HttpPeer::flush_conversations -> Vec<usize> with vec![0]
+stackslib/src/net/server.rs:605:9: replace HttpPeer::flush_conversations -> Vec<usize> with vec![1]
+stackslib/src/net/server.rs:636:9: replace HttpPeer::run -> Vec<StacksMessageType> with vec![]
+stackslib/src/net/stackerdb/mod.rs:188:9: replace StackerDBConfig::num_slots -> u32 with 0
+stackslib/src/net/stackerdb/mod.rs:188:9: replace StackerDBConfig::num_slots -> u32 with 1
+stackslib/src/chainstate/coordinator/mod.rs:2739:9: replace ChainsCoordinator<'a, T, N, U, CE, FE, B>::try_replay_stacks_block -> Result<(), Error> with Ok(())
+stackslib/src/chainstate/coordinator/mod.rs:2843:9: replace ChainsCoordinator<'a, T, N, U, CE, FE, B>::consider_pox_anchor -> Result<Option<BlockHeaderHash>, Error> with Ok(None)
+stackslib/src/chainstate/coordinator/mod.rs:3187:5: replace migrate_chainstate_dbs -> Result<(), Error> with Ok(())
+stackslib/src/chainstate/stacks/mod.rs:214:9: replace <impl Error for Error>::cause -> Option<&dyn error::Error> with None
+stackslib/src/chainstate/stacks/mod.rs:254:9: replace Error::name -> &'static str with ""
+stackslib/src/chainstate/stacks/mod.rs:292:9: replace Error::into_json -> serde_json::Value with Default::default()
+stackslib/src/burnchains/affirmation.rs:374:9: replace AffirmationMap::pop -> Option<AffirmationMapEntry> with None
+stackslib/src/core/mempool.rs:1186:9: replace CandidateCache::len -> usize with 1
+stackslib/src/core/mempool.rs:1290:9: replace MemPoolDB::add_indexes -> Result<(), db_error> with Ok(())
+stackslib/src/core/mempool.rs:1298:9: replace MemPoolDB::instantiate_bloom_state -> Result<(), db_error> with Ok(())
+stackslib/src/core/mempool.rs:1315:9: replace MemPoolDB::instantiate_cost_estimator -> Result<(), db_error> with Ok(())
+stackslib/src/core/mempool.rs:1333:9: replace MemPoolDB::instantiate_tx_blacklist -> Result<(), db_error> with Ok(())
+stackslib/src/core/mempool.rs:1350:9: replace MemPoolDB::db_path -> Result<String, db_error> with Ok(String::new())
+stackslib/src/core/mempool.rs:1342:9: replace MemPoolDB::instantiate_nonces -> Result<(), db_error> with Ok(())
+stackslib/src/core/mempool.rs:1350:9: replace MemPoolDB::db_path -> Result<String, db_error> with Ok("xyzzy".into())
+stackslib/src/core/mempool.rs:1457:9: replace MemPoolDB::reset_nonce_cache -> Result<(), db_error> with Ok(())
+stackslib/src/net/api/getblock.rs:210:9: replace <impl HttpChunkGenerator for StacksBlockStream>::generate_next_chunk -> Result<Vec<u8>, String> with Ok(vec![0])
+stackslib/src/net/api/getblock.rs:210:9: replace <impl HttpChunkGenerator for StacksBlockStream>::generate_next_chunk -> Result<Vec<u8>, String> with Ok(vec![1])
+stackslib/src/net/api/getheaders.rs:235:9: replace <impl HttpChunkGenerator for StacksHeaderStream>::generate_next_chunk -> Result<Vec<u8>, String> with Ok(vec![1])
+stackslib/src/net/api/getmicroblocks_indexed.rs:227:9: replace <impl HttpChunkGenerator for StacksIndexedMicroblockStream>::generate_next_chunk -> Result<Vec<u8>, String> with Ok(vec![1])
+stackslib/src/net/api/postmempoolquery.rs:135:9: replace <impl HttpChunkGenerator for StacksMemPoolStream>::generate_next_chunk -> Result<Vec<u8>, String> with Ok(vec![1])
+stackslib/src/net/api/postmempoolquery.rs:131:9: replace <impl HttpChunkGenerator for StacksMemPoolStream>::hint_chunk_size -> usize with 0
+stackslib/src/net/api/postmempoolquery.rs:131:9: replace <impl HttpChunkGenerator for StacksMemPoolStream>::hint_chunk_size -> usize with 1
+stackslib/src/net/api/poststackerdbchunk.rs:130:9: replace StackerDBErrorCodes::reason -> &'static str with ""
+stackslib/src/net/http/response.rs:118:9: replace HttpResponseContents::pipe_out -> Result<u64, Error> with Ok(1)
+stackslib/src/net/http/stream.rs:48:9: replace HttpChunkGenerator::stream_to -> Result<u64, io::Error> with Ok(1)
+stackslib/src/net/neighbors/comms.rs:496:9: replace <impl NeighborComms for PeerNetworkComms>::add_batch_request with ()
+stackslib/src/net/neighbors/comms.rs:682:9: replace NeighborCommsRequest::count_inflight -> usize with 0
+stackslib/src/chainstate/burn/db/sortdb.rs:2966:9: replace SortitionDB::apply_schema_5 -> Result<(), db_error> with Ok(())
+stackslib/src/chainstate/burn/db/sortdb.rs:2803:9: replace SortitionDB::get_consensus_hash_height -> Result<Option<u64>, db_error> with Ok(Some(1))
+stackslib/src/chainstate/burn/db/sortdb.rs:2996:9: replace SortitionDB::apply_schema_7 -> Result<(), db_error> with Ok(())
+stackslib/src/chainstate/burn/db/sortdb.rs:2981:9: replace SortitionDB::apply_schema_6 -> Result<(), db_error> with Ok(())
+stackslib/src/chainstate/burn/db/sortdb.rs:3327:9: replace SortitionDBConn<'a>::get_reward_set_size_at -> Result<u16, db_error> with Ok(0)
+stackslib/src/chainstate/burn/db/sortdb.rs:3327:9: replace SortitionDBConn<'a>::get_reward_set_size_at -> Result<u16, db_error> with Ok(1)
+stackslib/src/chainstate/burn/db/sortdb.rs:3442:9: replace SortitionDB::revalidate_snapshot_with_block -> Result<(), BurnchainError> with Ok(())
+stackslib/src/chainstate/burn/db/sortdb.rs:3807:9: replace SortitionDB::latest_stacks_blocks_processed -> Result<u64, BurnchainError> with Ok(1)
+stackslib/src/chainstate/burn/operations/leader_block_commit.rs:225:9: replace LeaderBlockCommitOp::is_parent_genesis -> bool with false

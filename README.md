@@ -18,7 +18,7 @@ The commits and the sync progress:
   - [x] stacks-common
   - [ ] stacks-node
   - [x] stacks-signer
-  - [ ] stackslib
+  - [x] stackslib - 3c6578529150ff8e15619f816399b341cb144969
   - [x] stx-genesis
 - next 2c1c777b9ed0124a65e9cd2c019bd85f0735a5e0
   - [x] clarity
